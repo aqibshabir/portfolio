@@ -3,9 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { BiWorld } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+// import corpcommentImg from "@/public/corpcomment.png";
+// import rmtdevImg from "@/public/rmtdev.png";
+// import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -84,14 +84,7 @@ export const projectsData = [
       "MySQL",
       "Puppeteer",
     ],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Stashed",
-    description:
-      "A full-stack application that deals with file storage. Logged-in users can store, update, delete and edit their files.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase"],
-    imageUrl: wordanalyticsImg,
+    // imageUrl: corpcommentImg,
   },
   {
     title: "Stream Zone",
@@ -105,7 +98,14 @@ export const projectsData = [
       "Prisma",
       "Websockets",
     ],
-    imageUrl: rmtdevImg,
+    // imageUrl: rmtdevImg,
+  },
+  {
+    title: "Stashed",
+    description:
+      "A full-stack application that deals with file storage. Logged-in users can store, update, delete and edit their files.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase"],
+    // imageUrl: wordanalyticsImg,
   },
 ] as const;
 
