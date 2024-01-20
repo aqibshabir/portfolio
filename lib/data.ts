@@ -3,9 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { BiWorld } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import placeHolderOne from "@/public/placeholder1.png";
+import placeHolderTwo from "@/public/placeholder2.png";
+import placeHolderThree from "@/public/placeholder3.png";
 
 export const links = [
   {
@@ -77,14 +77,13 @@ export const projectsData = [
       "React",
       "Redux",
       "Javascript",
-      "GSAP",
       "SASS",
       "Node",
       "Express",
       "MySQL",
       "Puppeteer",
     ],
-    // imageUrl: corpcommentImg,
+    imageUrl: placeHolderOne,
   },
   {
     title: "Stream Zone",
@@ -98,14 +97,14 @@ export const projectsData = [
       "Prisma",
       "Websockets",
     ],
-    // imageUrl: rmtdevImg,
+    imageUrl: placeHolderTwo,
   },
   {
     title: "Stashed",
     description:
       "A full-stack application that deals with file storage. Logged-in users can store, update, delete and edit their files.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase"],
-    // imageUrl: wordanalyticsImg,
+    imageUrl: placeHolderThree,
   },
 ] as const;
 
