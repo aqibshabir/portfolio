@@ -9,7 +9,7 @@ export default function Footer() {
         <p className='text-xs mb-2 font-thin'>
             Made with: React, Nextjs, Typescript, Tailwind CSS, Framer Motion, React Email &amp; Resend.
         </p>
-        <p className='text-xs text-black font-semibold' >Hosted on Vercel.</p>
+        <p className='text-xs' >Hosted on Vercel.</p>
     </footer>
   )
 }

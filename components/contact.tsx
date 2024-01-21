@@ -9,7 +9,7 @@ import SubmitBtn from './submit-btn';
 import { toast } from 'sonner';
 
 export default function Contact() {
-    const { ref } = useSectionInView("Contact");
+    const { ref } = useSectionInView("Contact", 0.2);
 
   return (
     <motion.section
@@ -43,7 +43,8 @@ export default function Contact() {
         }}>
             <input name='senderEmail' className='h-14 rounded-lg borderBlack px-4' type='email' required maxLength={100} placeholder='Your email'/>
             <textarea name='message' className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' required maxLength={500} />
-            <SubmitBtn />
+            <div className='flex justify-center sm:justify-end'><SubmitBtn /></div>
+            
         </form>
     </motion.section>
   )
