@@ -5,7 +5,7 @@ import Project from './project'
 
 export default function Projects() {
   return (
-    <section>
+    <section className='scroll-mt-28' id="projects">
         <SectionHeading>
             Example projects
         </SectionHeading>
