@@ -1,11 +1,41 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { BiWorld } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
+import {
+  FaCss3Alt,
+  FaDocker,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaSass,
+} from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import placeHolderOne from "@/public/placeholder1.png";
 import placeHolderTwo from "@/public/placeholder2.png";
 import placeHolderThree from "@/public/placeholder3.png";
+import { SiJavascript } from "react-icons/si";
+import {
+  SiCypress,
+  SiExpress,
+  SiGreensock,
+  SiKubernetes,
+  SiMui,
+  SiMysql,
+  SiPrisma,
+  SiPuppeteer,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+import {
+  TbBrandFramerMotion,
+  TbBrandNextjs,
+  TbBrandThreejs,
+} from "react-icons/tb";
+import { DiMongodb, DiRedis } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
+import { GrGraphQl } from "react-icons/gr";
 
 export const links = [
   {
@@ -36,7 +66,7 @@ export const links = [
 
 export const journeyData = [
   {
-    title: "Graduated University",
+    title: "University",
     location: "Bangor, UK",
     description: "Joint Honors in Philosophy & English Literature",
     icon: React.createElement(LuGraduationCap),
@@ -54,7 +84,7 @@ export const journeyData = [
     title: "Working a 9-5",
     location: "Chester, UK",
     description:
-      "I shifted my focus to learn computer science whilst working a full-time job, learning languages such as C, Python and later Javascript.",
+      "I shifted my focus to learn computer science whilst working a full-time job, learning languages such as C, Python and later the fundementals of Javascript.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -109,31 +139,58 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Redux",
-  "Zustand",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "Tailwind",
-  "SASS",
-  "Material UI",
-  "Git",
-  "MySQL",
-  "Prisma",
-  "MongoDB",
-  "Firebase",
-  "Redis",
-  "GraphQL",
-  "Puppeteer",
-  "Cypress",
-  "GSAP",
-  "Three.js",
-  "Framer Motion",
-  "Docker",
-  "Kubernetes",
+  { name: "HTML", icon: React.createElement(FaHtml5), color: "#E34C26" },
+  { name: "CSS", icon: React.createElement(FaCss3Alt), color: "#264de4" },
+  {
+    name: "Javascript",
+    icon: React.createElement(SiJavascript),
+    color: "#F0DB4F",
+  },
+  {
+    name: "Typescript",
+    icon: React.createElement(SiTypescript),
+    color: "#3178C6",
+  },
+  { name: "React", icon: React.createElement(FaReact), color: "#61dafb" },
+  { name: "Redux", icon: React.createElement(SiRedux), color: "#764abc" },
+  { name: "Nextjs", icon: React.createElement(TbBrandNextjs), color: "#000" },
+  { name: "Node", icon: React.createElement(FaNodeJs), color: "#90c53f" },
+  { name: "Express", icon: React.createElement(SiExpress), color: "#353535" },
+  {
+    name: "Tailwind",
+    icon: React.createElement(SiTailwindcss),
+    color: "#18b8b8",
+  },
+  { name: "Sass", icon: React.createElement(FaSass), color: "#cd6799" },
+  { name: "Material UI", icon: React.createElement(SiMui), color: "#007fff" },
+  { name: "Git", icon: React.createElement(FaGitAlt), color: "#f05133" },
+  { name: "MySQL", icon: React.createElement(SiMysql), color: "#00618a" },
+  { name: "Prisma", icon: React.createElement(SiPrisma), color: "#123b51" },
+  { name: "MongoDB", icon: React.createElement(DiMongodb), color: "#50aa4c" },
+  {
+    name: "Firebase",
+    icon: React.createElement(IoLogoFirebase),
+    color: "#fcca3f",
+  },
+  { name: "Redis", icon: React.createElement(DiRedis), color: "#d82c20" },
+  { name: "GraphQL", icon: React.createElement(GrGraphQl), color: "#e10098" },
+  {
+    name: "Puppeteer",
+    icon: React.createElement(SiPuppeteer),
+    color: "#01d7a1",
+  },
+  { name: "Cypress", icon: React.createElement(SiCypress), color: "#49494c" },
+  { name: "GSAP", icon: React.createElement(SiGreensock), color: "#89cf00" },
+  { name: "Threejs", icon: React.createElement(TbBrandThreejs), color: "#000" },
+  {
+    name: "Framer Motion",
+    icon: React.createElement(TbBrandFramerMotion),
+    color: "#7a1df4",
+  },
+  { name: "Docker", icon: React.createElement(FaDocker), color: "#0092e6" },
+  {
+    name: "Kubernetes",
+    icon: React.createElement(SiKubernetes),
+    color: "#336ee4",
+  },
 ] as const;
