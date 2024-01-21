@@ -7,9 +7,12 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/hooks/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+
+  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
 
   return (
     <section
@@ -75,6 +78,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact")
+            setTimeOfLastClick(Date.now())
+          }}
         >
           Contact{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -82,7 +89,7 @@ export default function Intro() {
         <a
           href="/cv.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full hover:hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 hover:border-none"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full hover:hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -91,14 +98,14 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/aqibshabir"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-blue-500 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 hover:border-none"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-blue-500 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://www.github.com/aqibshabir"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-gray-700 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 hover:border-none"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-gray-700 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
           >
             <BsGithub />
           </a>

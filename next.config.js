@@ -7,7 +7,7 @@ const nextConfig = {
                 hostname: 'avatar.iran.liara.run'
             },
         ]
-    }
+    },
 }
 
 module.exports = nextConfig

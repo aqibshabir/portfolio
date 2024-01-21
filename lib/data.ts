@@ -81,10 +81,10 @@ export const journeyData = [
     date: "2018 - 2021",
   },
   {
-    title: "Working a 9-5",
+    title: "Full Time job + upskilling",
     location: "Chester, UK",
     description:
-      "Nearing the end of the pandemic I shifted my focus to learn the fundamentals of computer science whilst working a full-time job.",
+      "Nearing the end of the pandemic I shifted my focus to learn the fundamentals of programming whilst working a full-time job as a warehouse associate.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2024",
   },

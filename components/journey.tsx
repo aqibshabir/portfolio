@@ -8,7 +8,7 @@ import { journeyData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 
 export default function Journey() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Journey");
   
   return (
     <section 
