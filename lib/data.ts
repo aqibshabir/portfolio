@@ -66,17 +66,17 @@ export const links = [
 
 export const journeyData = [
   {
-    title: "University",
+    title: "Graduated University",
     location: "Bangor, UK",
-    description: "Joint Honors in Philosophy & English Literature",
+    description: "Joint Honors in Philosophy & English Literature.",
     icon: React.createElement(LuGraduationCap),
-    date: "2014-2018",
+    date: "2018",
   },
   {
     title: "English Teacher",
-    location: "Hong Kong",
+    location: "Hong Kong, Asia",
     description:
-      "I worked as an English teacher abroad (and later remotely from the UK during the pandemic)",
+      "I worked as an English teacher abroad and later, remotely during the pandemic.",
     icon: React.createElement(BiWorld),
     date: "2018 - 2021",
   },
@@ -84,15 +84,15 @@ export const journeyData = [
     title: "Working a 9-5",
     location: "Chester, UK",
     description:
-      "I shifted my focus to learn computer science whilst working a full-time job, learning languages such as C, Python and later the fundementals of Javascript.",
+      "Nearing the end of the pandemic I shifted my focus to learn the fundamentals of computer science whilst working a full-time job.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - present",
+    date: "2022 - 2024",
   },
   {
     title: "Graduated bootcamp",
     location: "London, UK",
     description:
-      "I graduated after 3 months of a full-time immersive bootcamp.",
+      "I graduated after 3 months of a full-time immersive bootcamp at The Jump Digital School.",
     icon: React.createElement(FaReact),
     date: "2023-2024",
   },
