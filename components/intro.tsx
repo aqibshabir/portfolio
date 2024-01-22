@@ -29,7 +29,7 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <div className="rounded-full border-[0.5rem]  border-transparent/5 shadow-x">
+          <div className="rounded-full border-[0.5rem]  border-transparent/5 shadow-x dark:border-transparent/20">
             <Image
               src="https://avatar.iran.liara.run/public/41"
               alt="profile-picture"
@@ -78,7 +78,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          className="group mt-1 bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/90 dark:hover:bg-white dark:text-gray-700"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -90,7 +90,7 @@ export default function Intro() {
         <a
           href="/cv.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full hover:hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-gray-700 dark:text-white dark:border-white/20"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -99,14 +99,15 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/aqibshabir"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-blue-500 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-blue-500 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-blue-500  dark:text-white dark:border-white/20"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://www.github.com/aqibshabir"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-gray-700 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-gray-700 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-white
+            dark:hover:text-black  dark:text-white dark:border-white/20"
           >
             <BsGithub />
           </a>

@@ -30,7 +30,7 @@ export default function Contact() {
     }}
     >
         <SectionHeading>Contact me</SectionHeading>
-        <p className='text-gray-700 -mt-10'>Please contact me directly at <a className='underline hover:text-blue-500' href='mailto:aqibfaisalshabir@gmail.com'>aqibfaisalshabir@gmail.com</a> or through this form</p>
+        <p className='text-gray-700 -mt-10 dark:text-white'>Please contact me directly at <a className='underline hover:text-blue-500' href='mailto:aqibfaisalshabir@gmail.com'>aqibfaisalshabir@gmail.com</a> or through this form</p>
 
         <form className='mt-10 flex flex-col' action={async(formData) => {
             const {data, error} = await sendEmail(formData)
@@ -41,11 +41,12 @@ export default function Contact() {
             }
             toast.success("Email sent successfully!")
         }}>
-            <input name='senderEmail' className='h-14 rounded-lg borderBlack px-4' type='email' required maxLength={100} placeholder='Your email'/>
-            <textarea name='message' className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' required maxLength={500} />
+            <input name='senderEmail' className='h-14 rounded-lg borderBlack px-4 dark:text-white dark:bg-black/60 dark:outline-none' type='email' required maxLength={100} placeholder='Your email'/>
+            <textarea name='message' className='h-52 my-3 rounded-lg borderBlack p-4 dark:text-white dark:bg-black/60 dark:outline-none' placeholder='Your message' required maxLength={500} />
             <div className='flex justify-center sm:justify-end'><SubmitBtn /></div>
             
         </form>
     </motion.section>
+    
   )
 }

@@ -33,16 +33,16 @@ export default function Project({
       ref={ref}
       className="group mb-6 sm:mb-8 last:mb-0 mx-auto"
     >
-      <section className="bg-grey-100 max-w-[22rem] sm:max-w-[48rem] border border-black/5 overflow-hidden sm:pr-8 relative h-[30rem] sm:h-[30rem] md:h-[22rem] hover:bg-gray-100 transition rounded-2xl group-even:pl-8">
+      <section className="bg-grey-100 max-w-[22rem] sm:max-w-[48rem] border border-black/5 overflow-hidden sm:pr-8 relative h-[30rem] sm:h-[30rem] md:h-[22rem] hover:bg-gray-100 transition rounded-2xl group-even:pl-8 dark:bg-black/30 dark:hover:bg-black/10 dark:text-white dark:border-white/10">
         <div className="sm:group-even:ml-[20rem] md:group-even:ml-[22rem] md:group-even:h-[20rem] py-4 pb-7 px-5 sm:pl-10 sm:pr-2 pt-10 sm:max-w-[50%] flex flex-col h-full">
           <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-gray-700 sm:mb-4 md:mb-0 z-20">
+          <p className="mt-2 text-sm leading-relaxed text-gray-700 sm:mb-4 md:mb-0 z-20 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap gap-2 mt-auto z-20">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 space-y-3 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                className="bg-black/[0.7] px-3 py-1 space-y-3 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-black dark:bg-white/90"
                 key={index}
               >
                 {tag}

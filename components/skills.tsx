@@ -41,7 +41,7 @@ export default function Skills() {
             }}
             custom={index}
             className={
-              "p-3 sm:p-5 bg-white border border-black/[0.1] rounded-full hover:bg-black/5"
+              "p-3 sm:p-5 bg-white border border-black/[0.1] rounded-full hover:bg-black/5 dark:bg-opacity-5 dark:border-black/80 dark:hover:bg-white/10"
             }
             style={{ color: `${skill.color}` }}
             key={index}
