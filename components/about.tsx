@@ -19,31 +19,28 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-10">
-        After an enriching period teaching abroad, I've shifted gears to pursue
-        my passion for programming. I completed a{" "}
+        After an amazing time teaching abroad, I've shifted gears to pursue my
+        passion for programming. I've completed a{" "}
         <span className="font-medium">full-stack web development</span> bootcamp
-        course at <span className="font-medium">The Jump Digital School</span> ,
+        course at <span className="font-medium">The Jump Digital School</span>,
         specializing in{" "}
         <span className="font-medium">React, Express, Node, and MongoDB</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of figuring out a solution to a problem.
+        My favorite part of programming is the problem-solving aspect: I{" "}
+        <span className="underline">love</span> the feeling of figuring out a
+        solution to a tough problem!
       </p>
 
-      <p className="mb-3">
-        I'm proficient in <span className="font-medium">JavaScript</span> and
-        familiar with <span className="font-medium">TypeScript</span>, I'm
-        always eager to explore new technologies and languages. Currently on the
-        lookout for a{" "}
-        <span className="font-medium">
-          full-time front-end software developer role
-        </span>
-        .<span className="italic">When I'm not coding</span>, I love playing
-        video games, watching movies, and travelling to unique destinations. I
-        also enjoy <span className="font-medium">learning new things</span>, I'm
-        currently learning more about{" "}
-        <span className="font-medium">chess and meditation</span>. I'm also
-        learning how to play the piano.
+      <p className="mb-10">
+        I'm currently using <span className="font-medium">JavaScript</span> and{" "}
+        <span className="font-medium">TypeScript</span>, however, I'm always
+        eager to explore new technologies and languages. Currently, I am
+        actively seeking a full-time Front-End Software Developer role, where I
+        can apply my skills and contribute to innovative projects.
+      </p>
+      <p>
+        Outside the world of coding, I find joy in playing video games, making
+        delicious meals in the kitchen, and exploring unique destinations
+        through travel.
       </p>
     </motion.section>
   );

@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
 
-  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -62,10 +62,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello,<span className="font-bold"> I'm Aqib.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer.</span> I really enjoy
-        building <span className="font-bold">websites</span> &{" "}
-        <span className="font-bold">apps</span>. My focus is on front-end
+        Hello,<span className="font-bold"> I'm Aqib!</span> I&apos;m a{" "}
+        <span className="font-bold">full-stack developer</span> from the UK. I
+        enjoy making <span className="font-bold">websites</span> &{" "}
+        <span className="font-bold">apps</span> look and feel{" "}
+        <span className="underline">awesome</span>. My focus is on front-end
         technologies like <span className="underline">React & Next.js</span>
       </motion.h1>
 
@@ -79,8 +80,8 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact{" "}
