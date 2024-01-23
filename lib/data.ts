@@ -161,13 +161,19 @@ export const microAppData = [
     icon: React.createElement(FaFolder),
   },
   {
+    title: "Apple Homage Piece",
+    description: "Paying homage to Apple by replicating their homepage.",
+    tags: ["HTML", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
     title: "Calculator App",
-    description: "Basic calculator app in React.",
+    description: "Basic functioning calculator app in React.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
   },
   {
-    title: "Tic Tac Toe Game",
+    title: "Tic-Tac-Toe Game",
     description: "Basic Tic-Tac-Toe game in React",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),

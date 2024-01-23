@@ -31,7 +31,7 @@ export default function Project({
         opacity: opacityProgress,
       }}
       ref={ref}
-      className="group mb-6 sm:mb-8 last:mb-0 mx-auto"
+      className="group mb-6 sm:mb-8 last:mb-28 mx-auto"
     >
       <section className="bg-grey-100 max-w-[22rem] sm:max-w-[48rem] border border-black/5 overflow-hidden sm:pr-8 relative h-[30rem] sm:h-[30rem] md:h-[22rem] hover:bg-gray-100 transition rounded-2xl group-even:pl-8 dark:bg-black/30 dark:hover:bg-black/10 dark:text-white dark:border-white/10">
         <div className="sm:group-even:ml-[20rem] md:group-even:ml-[22rem] md:group-even:h-[20rem] py-4 pb-7 px-5 sm:pl-10 sm:pr-2 pt-10 sm:max-w-[50%] flex flex-col h-full">
