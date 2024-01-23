@@ -141,6 +141,12 @@ export const projectsData = [
 
 export const microAppData = [
   {
+    title: "Hackathon App",
+    description: "Educational children's app created as a hackathon project.",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
     title: "Simpsons App",
     description: "A quote generator app using The Simpsons API.",
     tags: ["React", "Javascript", "CSS"],
@@ -169,12 +175,6 @@ export const microAppData = [
   {
     title: "Calculator App",
     description: "Basic functioning calculator app in React.",
-    tags: ["React", "Javascript", "CSS"],
-    icon: React.createElement(FaFolder),
-  },
-  {
-    title: "Tic-Tac-Toe Game",
-    description: "Basic Tic-Tac-Toe game in React",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
   },
