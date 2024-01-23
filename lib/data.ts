@@ -4,6 +4,7 @@ import { BiWorld } from "react-icons/bi";
 import {
   FaCss3Alt,
   FaDocker,
+  FaFolder,
   FaGitAlt,
   FaHtml5,
   FaNodeJs,
@@ -135,6 +136,41 @@ export const projectsData = [
       "A full-stack application that deals with file storage. Logged-in users can store, update, delete and edit their files.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase"],
     imageUrl: placeHolderThree,
+  },
+] as const;
+
+export const microAppData = [
+  {
+    title: "Simpsons App",
+    description: "A quote generator app using The Simpsons API.",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
+    title: "Pokedex App",
+    description:
+      "Using the PokeAPI to create a fun app to search & sort through different Pokemon",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
+    title: "Weather App",
+    description:
+      "Using Open Weather Map's API to make an interactive weather app quiz.",
+    tags: ["Javascript", "HTML", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
+    title: "Calculator App",
+    description: "Basic calculator app in React.",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
+  },
+  {
+    title: "Tic Tac Toe Game",
+    description: "Basic Tic-Tac-Toe game in React",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
   },
 ] as const;
 
