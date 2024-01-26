@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/header";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "sonner";
@@ -31,7 +30,6 @@ export default function RootLayout({
         <div className="bg-[#dbd7fb] -z-10 absolute bottom-[0rem] left-[-35rem] h-[31.25rem] w-[50rem] sm:w-[68.75rem] md:w-[68.75rem] lg:w-[90.75rem] 2xl:w-[120rem] rounded-full blur-[10rem] md:left-[-30rem] lg:left-[-40rem] dark:bg-[#211d41]"></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
             {children}
             <Toaster position="bottom-right" />
             <Footer />

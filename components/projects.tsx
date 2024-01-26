@@ -8,32 +8,32 @@ import { useSectionInView } from "@/hooks/hooks";
 import MicroApps from "./micro-apps";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.4);
+  const { ref } = useSectionInView("Projects", 0.2);
 
   return (
-    <section ref={ref} className="scroll-mt-28" id="projects">
-      <div className="flex flex-col justify-center items-center">
-      <SectionHeading>Highlighted projects</SectionHeading>
-      <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
+    <>
+      <section ref={ref} className="scroll-mt-28" id="projects">
+        <div className="flex flex-col justify-center items-center">
+          <SectionHeading>Featured projects</SectionHeading>
+          <div>
+            {projectsData.map((project, index) => (
+              <React.Fragment key={index}>
+                <Project {...project} />
+              </React.Fragment>
+            ))}
+          </div>
+          <div className="mt-10">
+            <SectionHeading>noteworthy projects</SectionHeading>
+          </div>
+          <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-[2.5rem] min-w-[50%] m-2">
+            {microAppData.map((microApp, index) => (
+              <React.Fragment key={index}>
+                <MicroApps {...microApp} />
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-        <div className="mt-10">
-        <SectionHeading>Other projects</SectionHeading>
-        </div>
-        <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-[2.5rem] min-w-[50%] m-2">
-        {microAppData.map((microApp, index) => (
-          <React.Fragment 
-          key={index}
-          >
-          <MicroApps {...microApp} />
-        </React.Fragment>
-        ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -102,6 +102,7 @@ export const journeyData = [
 export const projectsData = [
   {
     title: "Shopping Comparison Site",
+    string: "shop",
     description:
       "A full-stack shopping comparison web application built with 8 developers. My role was predominantly in the backend, creating the scraping comparison tool and its storage within the SQL database. After completion, I have went back to re-envision the front-end to match with my design aesthetic.",
     tags: [
@@ -118,6 +119,7 @@ export const projectsData = [
   },
   {
     title: "Stream Zone",
+    string: "stream",
     description:
       "A full-stack application that focuses on streaming games and interacting with streamers. Users can watch, stream and chat similar to how it works over at Twitch or Youtube.",
     tags: [
@@ -132,6 +134,7 @@ export const projectsData = [
   },
   {
     title: "Stashed",
+    string: "stash",
     description:
       "A full-stack application that deals with file storage. Logged-in users can store, update, delete and edit their files.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase"],
@@ -145,12 +148,16 @@ export const microAppData = [
     description: "Educational children's app created as a hackathon project.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
   },
   {
     title: "Simpsons App",
     description: "A quote generator app using The Simpsons API.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
   },
   {
     title: "Pokedex App",
@@ -158,6 +165,16 @@ export const microAppData = [
       "Using the PokeAPI to create a fun app to search & sort through different Pokemon",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
+  },
+  {
+    title: "Calculator App",
+    description: "Basic functioning calculator app in React.",
+    tags: ["React", "Javascript", "CSS"],
+    icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
   },
   {
     title: "Weather App",
@@ -165,18 +182,16 @@ export const microAppData = [
       "Using Open Weather Map's API to make an interactive weather app quiz.",
     tags: ["Javascript", "HTML", "CSS"],
     icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
   },
   {
     title: "Apple Homage Piece",
     description: "Paying homage to Apple by replicating their homepage.",
     tags: ["HTML", "CSS"],
     icon: React.createElement(FaFolder),
-  },
-  {
-    title: "Calculator App",
-    description: "Basic functioning calculator app in React.",
-    tags: ["React", "Javascript", "CSS"],
-    icon: React.createElement(FaFolder),
+    link: "/",
+    github: "/",
   },
 ] as const;
 

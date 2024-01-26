@@ -30,7 +30,7 @@ export default function Skills() {
       className="mt-20 mb-20 max-w-[53rem] scroll-mt-28"
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className="flex justify-center flex-wrap gap-4 text-gray-800 text-[40px] sm:text-4xl sm:gap-4">
+      <ul className="group flex justify-center flex-wrap gap-4 text-gray-800 text-[40px] sm:text-4xl sm:gap-4">
         {skillsData.map((skill, index) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -41,7 +41,7 @@ export default function Skills() {
             }}
             custom={index}
             className={
-              "p-3 sm:p-5 bg-white border border-black/[0.1] rounded-full hover:bg-black/5 dark:bg-opacity-5 dark:border-black/80 dark:hover:bg-white/10"
+              "flex-col p-3 sm:p-5 bg-white border border-black/[0.1] rounded-full hover:bg-black/5 dark:bg-opacity-5 dark:border-black/80 dark:hover:bg-white/10"
             }
             style={{ color: `${skill.color}` }}
             key={index}
