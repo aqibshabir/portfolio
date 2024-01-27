@@ -25,7 +25,7 @@ export default function About() {
           Since then, I&apos;ve had an itch that wasn&apos;t quite scratched. I knew that I wanted to pursue a career in software development, so I took part in a 12 week bootcamp offered by <a href="https://www.thejump.tech/" target="_blank" className="font-semibold hover:text-[#9884fc] hover:underline transition-all">The Jump Digital School</a> &ndash; they've helped me to understand the core concepts of <span className="underline">Javascript, React, Express, Node and MongoDB</span> - <span className="italic">and much more&#33;</span>
         </p>
         <p className="mb-4">
-      When I&apos;m not at the coding, I&apos;m usually playing video games, <span className="italic">cooking a killer omlette for breakfast</span> and travelling to different parts of the world. 
+      When I&apos;m not coding, I&apos;m usually playing video games, <span className="italic">cooking a killer omlette for breakfast</span> and travelling to different parts of the world. 
       </p>
       <p className="mb-4">
       <a href="#contact" className="font-semibold hover:text-[#9884fc] hover:underline transition-all">If you're an employer - give this a click and say hi&#33;</a>
