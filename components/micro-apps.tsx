@@ -3,8 +3,7 @@
 import { microAppData } from "@/lib/data";
 import { motion } from "framer-motion";
 import React from "react";
-import { CiLink } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
 
 type MicroAppsProps = (typeof microAppData)[number];
 
@@ -38,9 +37,23 @@ export default function MicroApps({
             {icon}
           </p>
           <h3 className="text-sm font-semibold text-center">{title}</h3>
-          <p className="mt-2 text-xs leading-relaxed text-gray-700 z-20 dark:text-white/70 text-center mb-4">
+          <p className="mt-2 text-xs leading-relaxed text-gray-700 z-20 dark:text-white/70 text-center">
             {description}
           </p>
+          <div className="flex justify-center w-full mt-4 gap-4 mb-4">
+            <a
+              href={github}
+              className="text-black/95 dark:text-white/95 flex text-xs hover:text-blue-500 dark:hover:text-blue-500"
+            >
+              <IoIosLink/> <span className="ml-1">Github</span>
+            </a>
+            <a
+              href={link}
+              className="text-black/95 dark:text-white/95 flex text-xs hover:text-blue-500 dark:hover:text-blue-500"
+            >
+              <IoIosLink /> <span className="ml-1">Live</span>
+            </a>
+          </div>
           <ul className="flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <li
@@ -51,20 +64,7 @@ export default function MicroApps({
               </li>
             ))}
           </ul>
-          <div className="flex justify-center w-full mt-4 gap-4">
-            <a
-              href={github}
-              className="text-black/95 px-1 bg-white/90 p-1 rounded-full hover:bg-white"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href={link}
-              className="text-black/95 px-1 bg-white/90 p-1 rounded-full hover:bg-white"
-            >
-              <CiLink />
-            </a>
-          </div>
+         
         </div>
       </section>
     </motion.div>

@@ -101,7 +101,7 @@ export const journeyData = [
 
 export const projectsData = [
   {
-    title: "Shopping Comparison Site",
+    title: "Shopping Comparison",
     string: "shop",
     description:
       "A full-stack shopping comparison web application built with 8 developers. My role was predominantly in the backend, creating the scraping comparison tool and its storage within the SQL database. After completion, I have went back to re-envision the front-end to match with my design aesthetic.",

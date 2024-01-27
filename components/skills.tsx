@@ -5,6 +5,8 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
+import {clsx as cn} from "clsx";
+
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,6 +22,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
+
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
@@ -30,7 +33,7 @@ export default function Skills() {
       className="mt-20 mb-20 max-w-[53rem] scroll-mt-28"
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className="group flex justify-center flex-wrap gap-4 text-gray-800 text-[40px] sm:text-4xl sm:gap-4">
+      <ul className="group flex justify-center flex-wrap gap-4 text-[40px] sm:text-4xl sm:gap-4">
         {skillsData.map((skill, index) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -41,13 +44,15 @@ export default function Skills() {
             }}
             custom={index}
             className={
-              "flex-col p-3 sm:p-5 bg-white border border-black/[0.1] rounded-full hover:bg-black/5 dark:bg-opacity-5 dark:border-black/80 dark:hover:bg-white/10"
+              `flex justify-center items-center text-center p-2 text-gray-600 hover:text-gray-950  bg-white/20  border border-black/[0.1] rounded-2xl hover:bg-white dark:bg-opacity-5 dark:border-black/80 dark:bg-black/50 dark:hover:bg-black/10 dark:text-white/80 dark:hover:text-white`
             }
-            style={{ color: `${skill.color}` }}
             key={index}
             title={skill.name}
           >
-            {skill.icon}
+        {skill.icon}
+        <ul className="text-xs pl-2 font-semibold">
+          <li>{skill.name}</li>
+        </ul>
           </motion.li>
         ))}
       </ul>
