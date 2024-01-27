@@ -33,7 +33,7 @@ export default function Skills() {
       className="mt-20 mb-20 max-w-[53rem] scroll-mt-28"
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className="group flex justify-center flex-wrap gap-4 text-[40px] sm:text-4xl sm:gap-4">
+      <ul className="flex justify-center flex-wrap gap-2 sm:text-4xl sm:gap-4">
         {skillsData.map((skill, index) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -44,12 +44,12 @@ export default function Skills() {
             }}
             custom={index}
             className={
-              `flex justify-center items-center text-center p-2 text-gray-600 hover:text-gray-950  bg-white/20  border border-black/[0.1] rounded-2xl hover:bg-white dark:bg-opacity-5 dark:border-black/80 dark:bg-black/50 dark:hover:bg-black/10 dark:text-white/80 dark:hover:text-white`
+              "group flex justify-center items-center text-center p-2 text-gray-600 hover:text-gray-950  bg-white/20  border border-black/[0.1] rounded-2xl hover:bg-white dark:bg-opacity-5 dark:border-black/80 dark:bg-black/50 dark:hover:bg-black/10 dark:text-white/80 dark:hover:text-white"
             }
             key={index}
             title={skill.name}
           >
-        {skill.icon}
+        <span className="group-hover:-translate-y-[1px] group-hover:-translate-x-[1px] transition-all">{skill.icon}</span>
         <ul className="text-xs pl-2 font-semibold">
           <li>{skill.name}</li>
         </ul>

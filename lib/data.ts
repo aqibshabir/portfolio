@@ -22,7 +22,6 @@ import {
   SiGreensock,
   SiKubernetes,
   SiMui,
-  SiMysql,
   SiPrisma,
   SiPuppeteer,
   SiRedux,
@@ -36,7 +35,7 @@ import {
 } from "react-icons/tb";
 import { DiMongodb, DiRedis } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
-import { GrGraphQl } from "react-icons/gr";
+import { GrGraphQl, GrMysql } from "react-icons/gr";
 
 export const links = [
   {
@@ -221,7 +220,7 @@ export const skillsData = [
   { name: "Sass", icon: React.createElement(FaSass), color: "#cd6799" },
   { name: "Material UI", icon: React.createElement(SiMui), color: "#007fff" },
   { name: "Git", icon: React.createElement(FaGitAlt), color: "#f05133" },
-  { name: "MySQL", icon: React.createElement(SiMysql), color: "#00618a" },
+  { name: "MySQL", icon: React.createElement(GrMysql), color: "#00618a" },
   { name: "Prisma", icon: React.createElement(SiPrisma), color: "#123b51" },
   { name: "MongoDB", icon: React.createElement(DiMongodb), color: "#50aa4c" },
   {

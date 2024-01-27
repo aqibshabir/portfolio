@@ -18,30 +18,19 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-10">
-        After an amazing time teaching abroad, I've shifted gears to pursue my
-        passion for programming. I've completed a{" "}
-        <span className="font-medium">full-stack web development</span> bootcamp
-        course at <span className="font-medium">The Jump Digital School</span>,
-        specializing in{" "}
-        <span className="font-medium">React, Express, Node, and MongoDB</span>.{" "}
-        My favorite part of programming is the problem-solving aspect: I{" "}
-        <span className="underline">love</span> the feeling of figuring out a
-        solution to a tough problem!
+      <div className="mb-10 text-sm sm:text-lg ">
+        <p className="mb-4"><span className="">My first encounter with programming</span> began at the start of the pandemic. As an avid streamer on Twitch, I wanted to create a bespoke chat that could be displayed alongside my stream. I couldn&apos;t find any information on this apart from an obsecure video in Portguese &ndash; only problem? <a target="_blank" href="https://thebackpackerintern.com/_wpx/wp-content/uploads/2015/01/Schermafbeelding-2015-01-19-om-13.31.25.png" className="font-semibold hover:underline hover:text-[#9884fc] transition-all">I don&apos;t speak Portguese&#33;</a> Naturally, my curiosity got the better of me and a few days later of tinkering around with the CSS styling, I had an amazing looking chat &ndash; that I'm still proud of to this day.
+        </p>
+        <p className="mb-4">
+          Since then, I&apos;ve had an itch that wasn&apos;t quite scratched. I knew that I wanted to pursue a career in software development, so I took part in a 12 week bootcamp offered by <a href="https://www.thejump.tech/" target="_blank" className="font-semibold hover:text-[#9884fc] hover:underline transition-all">The Jump Digital School</a> &ndash; they've helped me to understand the core concepts of <span className="underline">Javascript, React, Express, Node and MongoDB</span> - <span className="italic">and much more&#33;</span>
+        </p>
+        <p className="mb-4">
+      When I&apos;m not at the coding, I&apos;m usually playing video games, <span className="italic">cooking a killer omlette for breakfast</span> and travelling to different parts of the world. 
       </p>
-
-      <p className="mb-10">
-        I'm currently using <span className="font-medium">JavaScript</span> and{" "}
-        <span className="font-medium">TypeScript</span>, however, I'm always
-        eager to explore new technologies and languages. Currently, I am
-        actively seeking a full-time Front-End Software Developer role, where I
-        can apply my skills and contribute to innovative projects.
+      <p className="mb-4">
+      <a href="#contact" className="font-semibold hover:text-[#9884fc] hover:underline transition-all">If you're an employer - give this a click and say hi&#33;</a>
       </p>
-      <p>
-        Outside the world of coding, I find joy in playing video games, making
-        delicious meals in the kitchen, and exploring unique destinations
-        through travel.
-      </p>
+      </div>
     </motion.section>
   );
 }
