@@ -29,21 +29,21 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <div className="rounded-full border-[0.5rem]  border-transparent/5 shadow-x dark:border-transparent/20">
+          <div className="rounded-full border-[0.5rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20">
             <Image
-              src="https://avatar.iran.liara.run/public/41"
+              src="/profile.png"
               alt="profile-picture"
               width="250"
               height="250"
               quality="95"
               priority={true}
-              className="h-44 w-44 sm:h-60 sm:w-60 object-cover"
+              className="h-44 w-44 sm:h-60 sm:w-60 object-cover rounded-full bg-transparent/5 dark:bg-transparent/20"
             />
           </div>
         </motion.div>
 
         <motion.span
-          className="text-3xl sm:text-4xl absolute top-5 right-2/5 ml-40"
+          className="text-3xl sm:text-4xl absolute bottom-7 right-1/5 ml-40"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1.3 }}
           transition={{
@@ -64,7 +64,7 @@ export default function Intro() {
       >
         Hi,<span className="font-bold"> I'm Aqib!</span> A{" "}
         <span className="font-bold">full-stack developer</span> from the UK. I
-        love making <span className="font-bold">websites</span>{" "}look{" "}
+        love making <span className="font-bold">websites</span> look{" "}
         <span className="underline">awesome</span>. I mainly focus on front-end
         technologies like <span className="underline">React & Next.js</span>
       </motion.h1>
