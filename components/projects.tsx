@@ -8,7 +8,7 @@ import { useSectionInView } from "@/hooks/hooks";
 import MicroApps from "./micro-apps";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.2);
+  const { ref } = useSectionInView("Projects", 0.1);
 
   return (
     <>
