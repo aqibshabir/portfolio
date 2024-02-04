@@ -103,7 +103,7 @@ export const projectsData = [
     title: "Shopping Comparison",
     string: "shop",
     description:
-      "A full-stack shopping comparison web application built with 8 developers. My role was predominantly in the backend, creating the scraping comparison tool and its storage within the SQL database. After completion, I have went back to re-envision the front-end.",
+      "A full-stack shopping comparison web application built with 8 developers. My role was predominantly in the backend - implementing the web-scraping, the comparison algortithm and its storage within the MySQL database. After completion, I have went back to re-envision the front-end.",
     tags: [
       "React",
       "Redux",
@@ -120,7 +120,7 @@ export const projectsData = [
     title: "Stream Zone",
     string: "stream",
     description:
-      "A full-stack application that focuses on streaming games and interacting with streamers. Users can watch, stream and chat similar to how it works over at Twitch or Youtube.",
+      "A full-stack application that focuses on streaming games and interacting with the streamer. Users can watch, stream and chat similar to how it works over at Twitch or Youtube.",
     tags: [
       "React",
       "TypeScript",
@@ -147,16 +147,16 @@ export const microAppData = [
     description: "Educational children's app created as a hackathon project.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://what-three-letters.netlify.app/",
+    github: "https://github.com/aqibshabir/hackathon-app",
   },
   {
     title: "Simpsons App",
     description: "A quote generator app using The Simpsons API.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://simpsons-app-aqib.netlify.app/",
+    github: "https://github.com/aqibshabir/react-simpsons-app",
   },
   {
     title: "Pokedex App",
@@ -164,16 +164,16 @@ export const microAppData = [
       "Using the PokeAPI to create a fun app to search & sort through different Pokemon",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://github.com/aqibshabir/pokedex",
+    github: "https://github.com/aqibshabir/pokedex",
   },
   {
     title: "Calculator App",
     description: "Basic functioning calculator app in React.",
     tags: ["React", "Javascript", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://calculator-app-aqib.netlify.app/",
+    github: "https://github.com/aqibshabir/react-calculator",
   },
   {
     title: "Weather App",
@@ -181,16 +181,16 @@ export const microAppData = [
       "Using Open Weather Map's API to make an interactive weather app quiz.",
     tags: ["Javascript", "HTML", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://i-gust-correctly.netlify.app/",
+    github: "https://github.com/aqibshabir/ft4-weather-app",
   },
   {
     title: "Apple Homage Piece",
     description: "Paying homage to Apple by replicating their homepage.",
     tags: ["HTML", "CSS"],
     icon: React.createElement(FaFolder),
-    link: "/",
-    github: "/",
+    link: "https://apple-homage-piece-aqib.netlify.app/",
+    github: "https://github.com/aqibshabir/apple-homage-piece",
   },
 ] as const;
 

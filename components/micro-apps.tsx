@@ -43,12 +43,14 @@ export default function MicroApps({
           <div className="flex justify-center w-full mt-4 gap-4 mb-4">
             <a
               href={github}
+              target="_blank"
               className="text-black/95 dark:text-white/95 flex text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
             >
-              <IoIosLink/> <span className="ml-1">Github</span>
+              <IoIosLink /> <span className="ml-1">Github</span>
             </a>
             <a
               href={link}
+              target="_blank"
               className="text-black/95 dark:text-white/95 flex text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
             >
               <IoIosLink /> <span className="ml-1">Live</span>
@@ -64,7 +66,6 @@ export default function MicroApps({
               </li>
             ))}
           </ul>
-         
         </div>
       </section>
     </motion.div>
