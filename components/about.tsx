@@ -33,8 +33,9 @@ export default function About() {
             I don&apos;t speak Portguese&#33;
           </a>{" "}
           Naturally, my curiosity got the better of me and a few days later of
-          tinkering around with the CSS styling, I had an amazing looking chat
-          &ndash; that I'm still proud of to this day.
+          tinkering around with the CSS styling &#10088;and a lot of translation
+          from portuguese to english!&#10089;, I had an amazing looking chat
+          &ndash; that I&apos;m still proud of to this day.
         </p>
         <p className="mb-4">
           Since then, I&apos;ve had an itch that wasn&apos;t quite scratched. I
@@ -47,7 +48,7 @@ export default function About() {
           >
             The Jump Digital School
           </a>{" "}
-          &ndash; they've helped me to understand the core concepts of{" "}
+          &ndash; they&apos;ve helped me to understand the core concepts of{" "}
           <span className="underline">
             Javascript, React, Express, Node and MongoDB
           </span>{" "}
@@ -63,8 +64,8 @@ export default function About() {
             href="#contact"
             className="font-semibold hover:text-[#9884fc] hover:underline transition-all"
           >
-            If you are a recruiter and you like what you see - give this a click
-            and say hi&#33;
+            If you are a recruiter and you like what you see &ndash; give this a
+            click and say hi&#33;
           </a>
         </p>
       </div>
