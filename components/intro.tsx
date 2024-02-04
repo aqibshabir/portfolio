@@ -29,7 +29,7 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <div className="rounded-full border-[0.5rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20">
+          <div className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20">
             <Image
               src="/profile.png"
               alt="profile-picture"
@@ -43,7 +43,7 @@ export default function Intro() {
         </motion.div>
 
         <motion.span
-          className="text-3xl sm:text-4xl absolute bottom-7 right-1/5 ml-40"
+          className="text-3xl sm:text-[40px] absolute bottom-7 right-1/5 ml-40"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1.3 }}
           transition={{
