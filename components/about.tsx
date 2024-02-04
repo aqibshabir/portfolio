@@ -24,17 +24,17 @@ export default function About() {
           the start of the pandemic. As an avid streamer on Twitch, I wanted to
           create a bespoke chat that could be displayed alongside my stream. I
           couldn&apos;t find any information on this, apart from an obsecure
-          video in Portguese &ndash; the only problem?{" "}
+          video in Portuguese &ndash; the only problem?{" "}
           <a
             target="_blank"
             href="https://thebackpackerintern.com/_wpx/wp-content/uploads/2015/01/Schermafbeelding-2015-01-19-om-13.31.25.png"
             className="font-semibold hover:underline hover:text-[#9884fc] transition-all"
           >
-            I don&apos;t speak Portguese&#33;
+            I don&apos;t speak Portuguese&#33;
           </a>{" "}
           Naturally, my curiosity got the better of me and a few days later of
           tinkering around with the CSS styling &#10088;and a lot of translation
-          from portuguese to english!&#10089;, I had an amazing looking chat
+          from Portuguese to English!&#10089;, I had an amazing looking chat
           &ndash; that I&apos;m still proud of to this day.
         </p>
         <p className="mb-4">
