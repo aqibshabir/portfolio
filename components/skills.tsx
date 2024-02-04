@@ -5,8 +5,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
-import {clsx as cn} from "clsx";
-
+import { clsx as cn } from "clsx";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,7 +21,6 @@ const fadeInAnimationVariants = {
   }),
 };
 
-
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
@@ -30,7 +28,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mt-20 mb-20 max-w-[53rem] scroll-mt-28"
+      className="mt-20 mb-20 max-w-[53rem] scroll-mt-28 mx-4 sm:mx-0"
     >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex justify-center flex-wrap gap-2 sm:text-4xl sm:gap-4">
@@ -49,10 +47,12 @@ export default function Skills() {
             key={index}
             title={skill.name}
           >
-        <span className="group-hover:-translate-y-[1px] group-hover:-translate-x-[1px] transition-all">{skill.icon}</span>
-        <ul className="text-xs pl-2 font-semibold">
-          <li>{skill.name}</li>
-        </ul>
+            <span className="group-hover:-translate-y-[1px] group-hover:-translate-x-[1px] transition-all">
+              {skill.icon}
+            </span>
+            <ul className="text-xs pl-2 font-semibold">
+              <li>{skill.name}</li>
+            </ul>
           </motion.li>
         ))}
       </ul>
