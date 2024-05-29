@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mt-16 mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center relative">
         <motion.div
@@ -41,20 +41,6 @@ export default function Intro() {
             />
           </div>
         </motion.div>
-
-        <motion.span
-          className="text-3xl sm:text-[40px] absolute bottom-7 right-1/5 ml-40"
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1.3 }}
-          transition={{
-            type: "spring",
-            stiffness: 250,
-            delay: 0.3,
-            duration: 2,
-          }}
-        >
-          👋🏼
-        </motion.span>
       </div>
 
       <motion.h1

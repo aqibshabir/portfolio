@@ -36,30 +36,42 @@ import {
 import { DiMongodb, DiRedis } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { GrGraphQl, GrMysql } from "react-icons/gr";
+import { IoIosInformationCircle } from "react-icons/io";
+import { AiFillHome } from "react-icons/ai";
+import { FaPencilAlt } from "react-icons/fa";
+import { FaFileCode } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 export const links = [
   {
     name: "Home",
+    icon: React.createElement(AiFillHome, { size: 25 }),
     hash: "#home",
   },
   {
     name: "About",
+    icon: React.createElement(IoIosInformationCircle, { size: 25 }),
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
+    icon: React.createElement(FaPencilAlt, { size: 25 }),
     hash: "#skills",
   },
   {
+    name: "Projects",
+    icon: React.createElement(FaFileCode, { size: 25 }),
+    hash: "#projects",
+  },
+  {
     name: "Journey",
+    icon: React.createElement(MdOutlineWork, { size: 25 }),
     hash: "#journey",
   },
   {
     name: "Contact",
+    icon: React.createElement(MdEmail, { size: 25 }),
     hash: "#contact",
   },
 ] as const;

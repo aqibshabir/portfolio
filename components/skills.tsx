@@ -5,7 +5,6 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
-import { clsx as cn } from "clsx";
 
 const fadeInAnimationVariants = {
   initial: {

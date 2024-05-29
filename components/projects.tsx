@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <>
-      <section ref={ref} className="scroll-mt-28" id="projects">
+      <section ref={ref} className="mt-10 scroll-mt-28" id="projects">
         <div className="flex flex-col justify-center items-center">
           <SectionHeading>Featured projects</SectionHeading>
           <div>
