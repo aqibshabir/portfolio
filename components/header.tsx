@@ -62,15 +62,7 @@ export default function Header() {
                 }}
               >
                 <span className="hidden sm:block">{link.name}</span>
-                {!bool && (
-                  <span
-                    className="block sm:hidden"
-                    initial={{ y: -100, x: "-50%", opacity: 0 }}
-                    animate={{ y: 0, x: "-50%", opacity: 1 }}
-                  >
-                    {link.icon}
-                  </span>
-                )}
+                {!bool && <span className="block sm:hidden">{link.icon}</span>}
 
                 {link.name === activeSection && (
                   <motion.span
