@@ -19,16 +19,21 @@ export default function Header() {
 
   return (
     <header className="z-[999] relative">
-      <motion.div
-        className="sm:hidden z-[1000] flex justify-center items-center fixed top-3 right-[0.5rem] h-[2.75rem] w-[2.75rem] border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 cursor-pointer"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
+      <button
+        className="sm:hidden z-[1000] flex justify-center items-center fixed top-16 left-5 h-[2.75rem] w-[2.75rem] bg-white opacity-90 backdrop-blur-[0.5rem] border borderBlack border-opacity-40 shadow-2xl rounded-full hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 dark:border-white/20 cursor-pointer"
         onClick={() => onHandleClick()}
       >
         {bool ? <CiMenuKebab size={30} /> : <RxCross2 size={30} />}
-      </motion.div>
+      </button>
+      {!bool && (
+        <motion.div
+          className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 cursor-pointer"
+          initial={{ y: -100, x: "-50%", opacity: 0 }}
+          animate={{ y: 0, x: "-50%", opacity: 1 }}
+        ></motion.div>
+      )}
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 cursor-pointer"
+        className="hidden sm:block fixed top-0 left-1/2 h-[4.5rem] w-full rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 cursor-pointer"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -46,7 +51,7 @@ export default function Header() {
                 className={cn(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950 dark:text-gray-300":
+                    "text-gray-950 dark:text-gray-200":
                       activeSection === link.name,
                   }
                 )}
@@ -57,7 +62,16 @@ export default function Header() {
                 }}
               >
                 <span className="hidden sm:block">{link.name}</span>
-                <span className="block sm:hidden">{link.icon}</span>
+                {!bool && (
+                  <span
+                    className="block sm:hidden"
+                    initial={{ y: -100, x: "-50%", opacity: 0 }}
+                    animate={{ y: 0, x: "-50%", opacity: 1 }}
+                  >
+                    {link.icon}
+                  </span>
+                )}
+
                 {link.name === activeSection && (
                   <motion.span
                     className="sm:bg-gray-200 bg:none rounded-full absolute inset-0 -z-10  sm:dark:bg-gray-900"
