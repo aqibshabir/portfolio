@@ -28,6 +28,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
 import {
   TbBrandFramerMotion,
   TbBrandNextjs,
@@ -260,5 +261,10 @@ export const skillsData = [
     name: "Kubernetes",
     icon: React.createElement(SiKubernetes),
     color: "#336ee4",
+  },
+  {
+    name: "aws",
+    icon: React.createElement(FaAws),
+    color: "#ff9900",
   },
 ] as const;

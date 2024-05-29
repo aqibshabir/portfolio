@@ -51,7 +51,7 @@ export default function Header() {
                 className={cn(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950 dark:text-gray-200":
+                    "text-gray-950 dark:text-gray-100":
                       activeSection === link.name,
                   }
                 )}
@@ -62,7 +62,11 @@ export default function Header() {
                 }}
               >
                 <span className="hidden sm:block">{link.name}</span>
-                {!bool && <span className="block sm:hidden">{link.icon}</span>}
+                {!bool && (
+                  <span className="block sm:hidden hover:scale-[1.3] active:scale-105">
+                    {link.icon}
+                  </span>
+                )}
 
                 {link.name === activeSection && (
                   <motion.span
