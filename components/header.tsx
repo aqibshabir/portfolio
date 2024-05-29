@@ -9,7 +9,7 @@ import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 
 export default function Header() {
-  const [bool, setBool] = useState(false);
+  const [bool, setBool] = useState(true);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
