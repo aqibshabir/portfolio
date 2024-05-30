@@ -32,7 +32,8 @@ export default function Intro() {
         >
           <div
             className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20 hover:dark:border-transparent/40 hover:border-transparent/10"
-            onClick={() => setActive(!active)}
+            onMouseEnter={() => setActive(!active)}
+            onMouseLeave={() => setActive(!active)}
           >
             <Image
               src="/profile.png"

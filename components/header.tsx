@@ -5,7 +5,6 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import { clsx as cn } from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { CiMenuKebab } from "react-icons/ci";
 import { GoKebabHorizontal } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";
 

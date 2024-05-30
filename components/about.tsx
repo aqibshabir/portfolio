@@ -1,24 +1,63 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/hooks";
+import meme from "@/public/meme.png";
+import omlette from "@/public/omlette.jpg";
 
 export default function About() {
+  const [hover, setHover] = useState(false);
+  const [omletteHover, setOmletteHover] = useState(false);
+
   const { ref } = useSectionInView("About");
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
+  const onOmletteHover = () => {
+    setOmletteHover(!omletteHover);
+  };
 
   return (
     <motion.section
       ref={ref}
       className="mb-10 max-w-[45rem] text-center leading-8 sm:mb-0 p-8 sm:p-0 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0.5, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 0 }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
       <div className="mb-10 text-sm sm:text-lg tracking-wide">
+        {hover && (
+          <motion.img
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              duration: 0.25,
+              ease: "linear",
+            }}
+            className=" bg-inherit absolute top-[15%] right-[15%] sm:top-[17.5%] sm:right-[20%] md:right-[44%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            src={meme.src}
+          />
+        )}
+        {omletteHover && (
+          <motion.img
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              duration: 0.25,
+              ease: "linear",
+            }}
+            className="bg-inherit absolute top-[14.6%] right-[15%] sm:top-[15%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            src={omlette.src}
+          />
+        )}
         <p className="mb-4">
           <span className="">My first encounter with programming</span> began at
           the start of the pandemic. As an avid streamer on Twitch, I wanted to
@@ -26,9 +65,9 @@ export default function About() {
           couldn&apos;t find any information on this, apart from an obsecure
           video in Portuguese &ndash; the only problem?{" "}
           <a
-            target="_blank"
-            href="https://thebackpackerintern.com/_wpx/wp-content/uploads/2015/01/Schermafbeelding-2015-01-19-om-13.31.25.png"
-            className="font-semibold hover:underline hover:text-[#9884fc] transition-all"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
           >
             I don&apos;t speak Portuguese&#33;
           </a>{" "}
@@ -44,28 +83,33 @@ export default function About() {
           <a
             href="https://www.thejump.tech/"
             target="_blank"
-            className="font-semibold hover:text-[#9884fc] hover:underline transition-all"
+            className="font-black hover:italic hover:text-[#9884fc] hover:underline transition-all"
           >
             The Jump Digital School
           </a>{" "}
           &ndash; they&apos;ve helped me to understand the core concepts of{" "}
-          <span className="underline">
-            Javascript, React, Express, Node and MongoDB
-          </span>{" "}
-          - <span className="italic">and much more&#33;</span>
+          <span className="italic">
+            Javascript, React, Express, Node and MongoDB - and much more&#33;
+          </span>
         </p>
         <p className="mb-4">
           When I&apos;m not coding, I&apos;m usually playing video games,{" "}
-          <span className="italic">cooking a killer omlette for breakfast</span>{" "}
+          <span
+            className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
+            onMouseEnter={onOmletteHover}
+            onMouseLeave={onOmletteHover}
+          >
+            cooking a killer omlette for breakfast
+          </span>{" "}
           and travelling to different parts of the world.
         </p>
-        <p className="mb-4">
+        <p className="mt-[4rem] mb-4">
           <a
             href="#contact"
-            className="font-semibold hover:text-[#9884fc] hover:underline transition-all"
+            className="font-black hover:italic hover:text-[#9884fc] hover:underline transition-all"
           >
-            If you are a recruiter and you like what you see &ndash; give this a
-            click and say hi&#33;
+            If you are a recruiter and you like what you see &ndash; click this
+            and get in touch&#33;
           </a>
         </p>
       </div>
