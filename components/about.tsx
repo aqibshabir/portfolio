@@ -60,10 +60,11 @@ export default function About() {
         )}
         <p className="mb-4">
           <span className="">My first encounter with programming</span> began at
-          the start of the pandemic. As an avid streamer on Twitch, I wanted to
+          the start of the pandemic. As an avid streamer on Twitch and wanted to
           create a bespoke chat that could be displayed alongside my stream. I
-          couldn&apos;t find any information on this, apart from an obsecure
-          video in Portuguese &ndash; the only problem?{" "}
+          couldn&apos;t find any information on creating this feature, apart
+          from one single, obsecure video in Portuguese &ndash; the only
+          problem?{" "}
           <a
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -71,15 +72,15 @@ export default function About() {
           >
             I don&apos;t speak Portuguese&#33;
           </a>{" "}
-          Naturally, my curiosity got the better of me and a few days later of
-          tinkering around with the CSS styling &#10088;and a lot of translation
-          from Portuguese to English!&#10089;, I had an amazing looking chat
-          &ndash; that I&apos;m still proud of to this day.
+          Naturally, my curiosity got the better of me and a few days of
+          tinkering around with the CSS &#10088;and a lot of translation from
+          Portuguese to English!&#10089;, I had an amazing looking chat &ndash;
+          that I&apos;m still proud of to this day.
         </p>
         <p className="mb-4">
-          Since then, I&apos;ve had an itch that wasn&apos;t quite scratched. I
-          knew that I wanted to pursue a career in software development, so I
-          took part in a 12 week bootcamp offered by{" "}
+          Since then, I&apos;ve had the itch to develop software. I knew I
+          needed to pursue a career in software development, so I took part in a
+          12 week bootcamp offered by{" "}
           <a
             href="https://www.thejump.tech/"
             target="_blank"
@@ -89,19 +90,20 @@ export default function About() {
           </a>{" "}
           &ndash; they&apos;ve helped me to understand the core concepts of{" "}
           <span className="italic">
-            Javascript, React, Express, Node and MongoDB - and much more&#33;
+            JavaScript, TypeScript React, Express, Node and MongoDB - and much
+            more&#33;
           </span>
         </p>
         <p className="mb-4">
-          When I&apos;m not coding, I&apos;m usually playing video games,{" "}
+          When I&apos;m not coding, I casually play video games,{" "}
           <span
             className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
             onMouseEnter={onOmletteHover}
             onMouseLeave={onOmletteHover}
           >
-            cooking a killer omlette for breakfast
+            cook killer omlettes for breakfast
           </span>{" "}
-          and travelling to different parts of the world.
+          and travel the world.
         </p>
         <p className="mt-[4rem] mb-4">
           <a
