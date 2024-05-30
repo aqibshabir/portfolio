@@ -44,7 +44,7 @@ export default function MicroApps({
             <a
               href={github}
               target="_blank"
-              className="group text-black/95 dark:text-white/95 flex text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
+              className="group text-black/95 dark:text-white/95 items-center flex text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
             >
               <span className="mr-2 hover:underline">GitHub</span>
               <FaExternalLinkAlt className="group-hover:translate-x-[1px] group-hover:translate-y-[-1px]" />
@@ -52,7 +52,7 @@ export default function MicroApps({
             <a
               href={link}
               target="_blank"
-              className="group text-black/95 dark:text-white/95 flex text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
+              className="group text-black/95 dark:text-white/95 flex items-center text-xs hover:text-[#9884fc] dark:hover:text-[#9884fc]"
             >
               <span className="mr-2 hover:underline">Live</span>
               <FaExternalLinkAlt className="group-hover:translate-x-[1px] group-hover:translate-y-[-1px]" />
