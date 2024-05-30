@@ -1,12 +1,13 @@
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { clsx as cn } from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { CiMenuKebab } from "react-icons/ci";
+import { GoKebabHorizontal } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
 
 export default function Header() {
   const [bool, setBool] = useState(true);
@@ -20,10 +21,10 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <button
-        className="sm:hidden z-[1000] flex justify-center items-center fixed top-16 left-5 h-[2.75rem] w-[2.75rem] bg-white opacity-90 backdrop-blur-[0.5rem] border borderBlack border-opacity-40 shadow-2xl rounded-full hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 dark:border-white/20 cursor-pointer"
+        className="sm:hidden z-[1000] flex justify-center items-center fixed top-[5rem] right-[1.5rem] h-[2.75rem] w-[2.75rem] shadow-lg bg-white opacity-90 backdrop-blur-[0.5rem] border borderBlack border-opacity-40 rounded-full hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 dark:border-white/20 cursor-pointer"
         onClick={() => onHandleClick()}
       >
-        {bool ? <CiMenuKebab size={30} /> : <RxCross2 size={30} />}
+        {bool ? <GoKebabHorizontal size={25} /> : <RxCross2 size={25} />}
       </button>
       {!bool && (
         <motion.div
@@ -63,7 +64,7 @@ export default function Header() {
               >
                 <span className="hidden sm:block">{link.name}</span>
                 {!bool && (
-                  <span className="block sm:hidden hover:scale-[1.3] active:scale-105">
+                  <span className="block sm:hidden hover:scale-[1.3]">
                     {link.icon}
                   </span>
                 )}

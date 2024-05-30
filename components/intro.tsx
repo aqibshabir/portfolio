@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
@@ -10,6 +10,7 @@ import { useSectionInView } from "@/hooks/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const [active, setActive] = useState(false);
   const { ref } = useSectionInView("Home", 0.5);
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -29,7 +30,10 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <div className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20">
+          <div
+            className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20 hover:dark:border-transparent/40 hover:border-transparent/10"
+            onClick={() => setActive(!active)}
+          >
             <Image
               src="/profile.png"
               alt="profile-picture"
@@ -37,8 +41,26 @@ export default function Intro() {
               height="250"
               quality="95"
               priority={true}
-              className="h-44 w-44 sm:h-60 sm:w-60 object-cover rounded-full bg-transparent/5 dark:bg-transparent/20"
+              className="h-44 w-44 sm:h-60 sm:w-60 object-cover rounded-full bg-transparent/5 dark:bg-transparent/20 cursor-pointer"
             />
+            {active && (
+              <>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.6,
+                    duration: 0.4,
+                  }}
+                  className="absolute flex justify-center items-center top-[10%] left-[69%] sm:left-[69%] sm:h-[80px] h-[50px] sm:w-[150px] w-[70px] rounded-bl-none rounded-full shadow-x-10 bg-transparent/5 hover:bg-transparent/10 dark:bg-transparent/20 hover:dark:bg-transparent/40 cursor-pointer"
+                >
+                  <p className="font-bold sm:text-4xl tracking-wide text-xl text-transparent/60 dark:text-white">
+                    Hi!
+                  </p>
+                </motion.div>
+              </>
+            )}
           </div>
         </motion.div>
       </div>
