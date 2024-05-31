@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,6 +13,15 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      animation: {
+        "loop-scroll": "loop-scroll 40s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },

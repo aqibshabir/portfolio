@@ -42,7 +42,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className=" bg-inherit absolute top-[15%] right-[15%] sm:top-[17.5%] sm:right-[20%] md:right-[44%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className=" bg-inherit absolute top-[15%] right-[15%] sm:top-[17%] sm:right-[20%] md:right-[44%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
             src={meme.src}
           />
         )}
@@ -55,7 +55,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className="bg-inherit absolute top-[14.6%] right-[15%] sm:top-[15%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="bg-inherit absolute top-[14.6%] right-[15%] sm:top-[16%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
             src={omlette.src}
           />
         )}
@@ -69,6 +69,8 @@ export default function About() {
           <a
             onMouseEnter={onHover}
             onMouseLeave={onHover}
+            href="https://www.duolingo.com/"
+            target="_blank"
             className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
           >
             I don&apos;t speak Portuguese&#33;
@@ -97,13 +99,15 @@ export default function About() {
         </p>
         <p className="mb-4">
           When I&apos;m not coding, I casually play video games,{" "}
-          <span
+          <a
             className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
             onMouseEnter={onOmletteHover}
             onMouseLeave={onOmletteHover}
+            target="_blank"
+            href="https://www.bonappetit.com/test-kitchen/how-to/article/perfect-french-omelet-hint-will-butter"
           >
             cook killer omlettes for breakfast
-          </span>{" "}
+          </a>{" "}
           and travel the world.
         </p>
         <p className="mt-[4rem] mb-4"></p>
