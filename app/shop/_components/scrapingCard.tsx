@@ -14,7 +14,7 @@ function ScrapingCard() {
           <TbSquareNumber8Filled className="text-[5rem] mr-2 group-hover:scale-105 transition ease-linear sm:mt-3 md:mt-0" />
         </h2>
         <p className="text-xl sm:text-lg md:text-2xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem] lg:ml-2 xl:ml-4">
-          Supermarkets&apos; data scraped
+          Supermarkets scraped
         </p>
       </div>
       <div className="sm:hidden md:block">

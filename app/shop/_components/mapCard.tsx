@@ -16,7 +16,7 @@ function MapCard() {
         <p className="sm:hidden md:inline text-sm text-gray-500 p-2">
           Using mapping technology to find the closest store in your proximity.{" "}
           <span className="hidden md:inline text-sm text-gray-500">
-            Done using in-built API's for supermarkets nationwide.
+            Done using in-built API&apos;s for supermarkets nationwide.
           </span>
         </p>
       </div>

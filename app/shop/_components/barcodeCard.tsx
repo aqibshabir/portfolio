@@ -8,7 +8,7 @@ function BarcodeCard() {
         <p className="p-2 lg:p-4 text-xl text-end sm:text-md md:text-xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem] xl:leading-8">
           Barcode search enabled
         </p>
-        <h2 className="text-[100px] group-hover:animate-pulse xl:text-[120px]">
+        <h2 className="text-[100px] group-hover:animate-pulse xl:text-[120px] transition">
           <IoBarcodeOutline />
         </h2>
       </div>
