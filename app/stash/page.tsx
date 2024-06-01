@@ -12,6 +12,7 @@ export default function Page() {
       <Video />
       <LogoScroller />
       <Cards />
+      <div className="h-[1000px]"></div>
     </>
   );
 }
