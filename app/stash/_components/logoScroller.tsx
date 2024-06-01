@@ -5,7 +5,7 @@ function LogoScroller() {
   return (
     <>
       <div
-        className="group ml-auto mr-auto flex justify-center max-w-[90%] sm:-w-[90%] md:-w-[90%]  lg:max-w-[1400px] h-[200px] overflow-hidden mb-10"
+        className="group ml-auto mr-auto flex justify-center max-w-[90%] sm:-w-[90%] md:-w-[90%]  lg:max-w-[1400px] overflow-hidden"
         style={{
           WebkitMask:
             "linear-gradient(90deg, transparent, white 20%, white 50%, transparent)",
@@ -13,8 +13,8 @@ function LogoScroller() {
         }}
       >
         <div className="flex justify-center animate-loop-scroll group-hover:paused ml-[1000px] md:ml-[1500px]">
-          <ul className="flex p-[2rem] sm:p-[3rem] md:p-[4rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
-            <li>{skillsData[3].icon}</li>
+          <ul className="flex p-[2rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
+            <li className="sm:ml-6">{skillsData[3].icon}</li>
             <li>{skillsData[4].icon}</li>
             <li>{skillsData[6].icon}</li>
             <li>{skillsData[7].icon}</li>
@@ -33,8 +33,8 @@ function LogoScroller() {
           aria-hidden="true"
           className="flex justify-center animate-loop-scroll group-hover:paused"
         >
-          <ul className="flex p-[2rem] sm:p-[3rem] md:p-[4rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
-            <li>{skillsData[3].icon}</li>
+          <ul className="flex p-[2rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
+            <li className="sm:ml-6">{skillsData[3].icon}</li>
             <li>{skillsData[4].icon}</li>
             <li>{skillsData[6].icon}</li>
             <li>{skillsData[7].icon}</li>
