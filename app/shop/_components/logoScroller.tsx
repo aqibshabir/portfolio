@@ -12,7 +12,7 @@ function LogoScroller() {
           mask: "linear-gradient(90deg, transparent, white 20%, white 90%, transparent)",
         }}
       >
-        <div className="flex justify-center animate-loop-scroll ease-in-out group-hover:paused ml-[800px] md:ml-[1500px]">
+        <div className="flex justify-center animate-loop-scroll ease-in-out group-hover:paused transition ml-[800px] md:ml-[1500px]">
           <ul className="flex p-[2rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl h-[10px]">
             <li className="ml-0 sm:ml-6">{skillsData[2].icon}</li>
             <li>{skillsData[4].icon}</li>

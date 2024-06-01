@@ -5,7 +5,7 @@ function BarcodeCard() {
   return (
     <div className="group">
       <div className="flex justify-end items-center">
-        <p className="p-2 lg:p-4 text-xl text-end sm:text-md md:text-xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem]">
+        <p className="p-2 lg:p-4 text-xl text-end sm:text-md md:text-xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem] xl:leading-8">
           Barcode search enabled
         </p>
         <h2 className="text-[100px] group-hover:animate-pulse xl:text-[120px]">
