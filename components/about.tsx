@@ -42,7 +42,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className=" bg-inherit absolute top-[15%] right-[15%] sm:top-[17%] sm:right-[20%] md:right-[44%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="hidden md:block bg-inherit absolute top-[15%] right-[15%] sm:top-[17%] sm:right-[20%] md:right-[44%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
             src={meme.src}
           />
         )}
@@ -55,7 +55,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className="bg-inherit absolute top-[14.6%] right-[15%] sm:top-[16%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="hidden md:block bg-inherit absolute top-[14.6%] right-[15%] sm:top-[16%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
             src={omlette.src}
           />
         )}
@@ -69,7 +69,7 @@ export default function About() {
           <a
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            href="https://www.duolingo.com/"
+            href="https://thebackpackerintern.com/_wpx/wp-content/uploads/2015/01/Schermafbeelding-2015-01-19-om-13.31.25.png"
             target="_blank"
             className="font-black hover:italic hover:underline hover:text-[#9884fc] transition-all cursor-pointer"
           >
