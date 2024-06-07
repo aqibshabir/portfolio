@@ -1,12 +1,12 @@
 import React from "react";
-import { PiChefHatBold } from "react-icons/pi";
+import { PiForkKnifeFill } from "react-icons/pi";
 
 function RecipeCard() {
   return (
     <div className="group">
       <div className="flex justify-center sm:justify-start sm:ml-10 md:ml-0">
         <h2 className="text-[10rem] mt-8 sm:mt-2 md:text-[12rem] lg:text-[20rem] lg:px-4">
-          <PiChefHatBold />
+          <PiForkKnifeFill  />
         </h2>
         <div className="hidden sm:block p-8 md:p-10 lg:p-0 lg:mt-16 lg:ml-4 xl:ml-12">
           <p className="mt-10 text-3xl lg:mb-6 xl:mb-8 font-black capitalize md:text-4xl lg:text-[3.3rem] lg:mt-8 xl:text-[4.5rem]">
