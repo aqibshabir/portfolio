@@ -6,7 +6,7 @@ function MapCard() {
     <div className="group">
       <div className="flex justify-center">
         <h2 className="text-[10rem] mt-8 lg:text-[16rem]">
-          <FaMapMarkedAlt />
+          <FaMapMarkedAlt  className="group-hover:scale-105 transition ease-linear"/>
         </h2>
       </div>
       <div className="flex-col mt-4 w-full text-center lg:px-10 xl:px-20">
