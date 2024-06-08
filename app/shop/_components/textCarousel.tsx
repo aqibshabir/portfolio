@@ -2,13 +2,11 @@
 
 import React from "react";
 
-function Information() {
+function TextCarousel() {
   return (
-    <div className="group flex justify-center items-center w-full xl:rounded-3xl xl:w-[1220px] xl:ml-auto xl:mr-auto h-[600px] bg-transparent/5 dark:bg-transparent/15 mb-10">
+    <div className="group flex justify-center items-center w-full sm:rounded-3xl sm:w-[600px] md:w-[720px] lg:w-[960px] xl:w-[1220px] sm:ml-auto sm:mr-auto h-[600px] bg-[#00000008] dark:bg-transparent/15 mb-10 hover:bg-[#0000000f] dark:hover:bg-transparent/30 transition">
       <div className="w-[350px] text-center">
-        <h2 className="mb-4 text-[3rem] font-bold capitalize group-hover:scale-110 transition ease-in-out">
-          the brief
-        </h2>
+        <h2 className="mb-4 text-[3rem] font-bold capitalize">the brief</h2>
         <div className="m-2">
           <p className="mb-2">
             This was a start-up application with a limited time-frame of just{" "}
@@ -34,4 +32,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default TextCarousel;
