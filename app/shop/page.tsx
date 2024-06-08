@@ -11,12 +11,10 @@ export default function Page() {
   return (
     <div className="">
       <Header />
-      <h1 className="text-center">Under Maintainance!</h1>
       <Video />
       <LogoScroller />
       <Cards />
-     < Information />
-      <div className="h-[1000px]"></div>
+      <Information />
     </div>
   );
 }

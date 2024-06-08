@@ -13,7 +13,7 @@ function LogoScroller() {
         }}
       >
         <div className="flex justify-center animate-loop-scroll ease-in-out group-hover:paused transition ml-[800px] md:ml-[1500px]">
-          <ul className="flex p-[2rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl h-[10px]">
+          <ul className="flex p-[1rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl h-[10px]">
             <li className="ml-0 sm:ml-6">{skillsData[2].icon}</li>
             <li>{skillsData[4].icon}</li>
             <li>{skillsData[5].icon}</li>
@@ -31,7 +31,7 @@ function LogoScroller() {
           aria-hidden="true"
           className="flex justify-center animate-loop-scroll group-hover:paused"
         >
-          <ul className="flex p-[2rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
+          <ul className="flex p-[1rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
             <li className="ml-0 sm:ml-6">{skillsData[2].icon}</li>
             <li>{skillsData[4].icon}</li>
             <li>{skillsData[5].icon}</li>
