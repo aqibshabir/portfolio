@@ -6,6 +6,7 @@ import Video from "./_components/video";
 import Cards from "./_components/cards";
 import Carousel from "./_components/carousel";
 import LogoCarousel from "./_components/logoCarousel";
+import SectionDivider from "@/components/section-divider";
 
 export default function Page() {
   return (

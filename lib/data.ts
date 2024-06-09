@@ -269,14 +269,23 @@ export const skillsData = [
   },
 ] as const;
 
-
 export const carouselData = [
   {
+    index: 0,
     title: "the brief",
-    paragraph: "This was a start-up application with a limited time-frame of just two weeks! The task was given to myself and 7 other developers. My primary role was the web scraping feature using Puppeteer and implementing a backend using Node and a MySQL database with a simple caching feature. After the app was deployed, I worked on modernizing the front-end, giving it a simple, yet modern user interface."
+    paragraph:
+      "This was a start-up application with a limited time-frame of just two weeks! The task was given to myself and 7 other developers. My primary role was the web scraping feature using Puppeteer and implementing a backend using Node and a MySQL database with a simple caching feature. After the app was deployed, I worked on modernizing the front-end, giving it a simple, yet modern user interface.",
   },
   {
-    title: "set up",
-    paragraph: "add data"
+    index: 1,
+    title: "the purpose",
+    paragraph:
+      "The application leverages web-scraping to find the cheapest deals from 8 of the biggest supermarkets in the U.K. It compares the prices, showing the cheapest places to buy certain products. Other features include; a shopping list, shop locator using maps and a recipe creator using products currently in your shopping list.",
   },
-] as const
+  {
+    index: 2,
+    title: "set up",
+    paragraph:
+      "One thing to note is there is no live link, our deployment was unable to keep up with the demands that the puppeteer web-scraping required. We mitigated these constraints temporarily by using a private server but have since halted its deployment. The best way for you to run this application is locally on your own machine. You will need three terminals open; one for the web-scraper, one for the back-end and one for the front-end. One last note on running it locally, make sure you have the necessary backend dependencies installed, you can view how to run this locally on my GitHub.",
+  },
+];
