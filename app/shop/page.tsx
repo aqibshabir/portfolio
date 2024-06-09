@@ -6,15 +6,16 @@ import Video from "./_components/video";
 import Cards from "./_components/cards";
 import Carousel from "./_components/carousel";
 import LogoCarousel from "./_components/logoCarousel";
-import SectionDivider from "@/components/section-divider";
+import LinkButtons from "./_components/linkButtons";
 
 export default function Page() {
   return (
-    <div className="">
+    <div>
       <Header />
       <Video />
       <LogoCarousel />
       <Cards />
+      <LinkButtons />
       <Carousel />
     </div>
   );

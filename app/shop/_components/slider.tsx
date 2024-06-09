@@ -31,7 +31,7 @@ function Slider({ carouselData }: SliderProps) {
           <h2 className="mb-6 text-4xl font-semibold text-center capitalize w-[240px] mx-auto sm:text-5xl md:text-6xl sm:mb-8 sm:w-[400px] md:w-[600px] xl:w-[800px] xl:text-8xl">
             {carouselData[textIndex].title}
           </h2>
-          <p className="text-sm text-center w-[245px] mx-auto sm:text-base sm:w-[460px] md:w-[600px] xl:w-[800px]">
+          <p className="text-sm text-center w-[245px] mx-auto sm:text-base sm:w-[460px] md:w-[600px] xl:w-[800px] xl:text-lg">
             {carouselData[textIndex].paragraph}
           </p>
         </div>
