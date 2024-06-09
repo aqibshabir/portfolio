@@ -268,3 +268,15 @@ export const skillsData = [
     color: "#ff9900",
   },
 ] as const;
+
+
+export const carouselData = [
+  {
+    title: "the brief",
+    paragraph: "This was a start-up application with a limited time-frame of just two weeks! The task was given to myself and 7 other developers. My primary role was the web scraping feature using Puppeteer and implementing a backend using Node and a MySQL database with a simple caching feature. After the app was deployed, I worked on modernizing the front-end, giving it a simple, yet modern user interface."
+  },
+  {
+    title: "set up",
+    paragraph: "add data"
+  },
+] as const
