@@ -307,3 +307,21 @@ export const carouselDataStream = [
     paragraph: "blank text 3",
   },
 ];
+
+export const carouselDataStash = [
+  {
+    index: 0,
+    title: "the brief",
+    paragraph: "blank text 1",
+  },
+  {
+    index: 1,
+    title: "the purpose",
+    paragraph: "blank text 2",
+  },
+  {
+    index: 2,
+    title: "the set-up",
+    paragraph: "blank text 3",
+  },
+];
