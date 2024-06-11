@@ -269,7 +269,7 @@ export const skillsData = [
   },
 ] as const;
 
-export const carouselData = [
+export const carouselDataShop = [
   {
     index: 0,
     title: "the brief",
@@ -284,8 +284,26 @@ export const carouselData = [
   },
   {
     index: 2,
-    title: "set up",
+    title: "the set-up",
     paragraph:
       "One thing to note is there is no live link, our deployment was unable to keep up with the demands that the puppeteer web-scraping required. We mitigated these constraints temporarily by using a private server but have since halted its deployment. The best way for you to run this application is locally on your own machine. You will need three terminals open; one for the web-scraper, one for the back-end and one for the front-end. One last note on running it locally, make sure you have the necessary backend dependencies installed, you can view how to run this locally on my GitHub.",
+  },
+];
+
+export const carouselDataStream = [
+  {
+    index: 0,
+    title: "the brief",
+    paragraph: "blank text 1",
+  },
+  {
+    index: 1,
+    title: "the purpose",
+    paragraph: "blank text 2",
+  },
+  {
+    index: 2,
+    title: "the set-up",
+    paragraph: "blank text 3",
   },
 ];

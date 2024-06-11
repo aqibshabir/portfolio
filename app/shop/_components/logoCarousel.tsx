@@ -12,7 +12,7 @@ function LogoCarousel() {
           mask: "linear-gradient(90deg, transparent, white 20%, white 90%, transparent)",
         }}
       >
-        <div className="flex justify-center animate-loop-scroll ease-in-out group-hover:paused transition ml-[800px] md:ml-[1500px]">
+        <div className="flex justify-center animate-loop-scroll ease-in-out transition ml-[800px] md:ml-[1500px]">
           <ul className="flex p-[1rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl h-[10px]">
             <li className="ml-[0.5rem] sm:ml-[2.7rem] md:ml-[4rem] hover:scale-105 ease-in-out transition">
               {skillsData[2].icon}
@@ -49,7 +49,7 @@ function LogoCarousel() {
 
         <div
           aria-hidden="true"
-          className="flex justify-center animate-loop-scroll group-hover:paused"
+          className="flex justify-center animate-loop-scroll"
         >
           <ul className="flex p-[1rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
             <li className="ml-[0.5rem] sm:ml-[2.7rem] md:ml-[4rem] hover:scale-105 ease-in-out transition">
