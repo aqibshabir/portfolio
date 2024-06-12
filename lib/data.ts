@@ -39,10 +39,8 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { GrGraphQl, GrMysql } from "react-icons/gr";
 import { IoIosInformationCircle } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
-import { FaPencilAlt } from "react-icons/fa";
-import { FaFileCode } from "react-icons/fa";
-import { MdOutlineWork } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
+import { FaPencilAlt, FaFileCode } from "react-icons/fa";
+import { MdOutlineWork, MdEmail } from "react-icons/md";
 
 export const links = [
   {

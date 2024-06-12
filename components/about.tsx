@@ -111,13 +111,15 @@ export default function About() {
           and travel the world.
         </p>
         <p className="mt-[4rem] mb-4"></p>
-        <a
-          href="#contact"
-          className="group font-bold mt-20 bg-gray-900 text-white py-3 flex items-center justify-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/90 dark:hover:bg-white dark:text-gray-900"
-        >
-          Recruiters get in touch&#33;
-          <BsArrowRight className="opacity-70 group-hover:translate-x-4 transition" />
-        </a>
+        <div className="flex justify-center items-center mt-6">
+          <a
+            href="#contact"
+            className="group w-[320px] font-bold bg-gray-900 text-white py-3 flex items-center justify-center gap-2 rounded-full hover:bg-gray-700 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/90 dark:hover:bg-white dark:text-gray-900"
+          >
+            Recruiters get in touch&#33;
+            <BsArrowRight className="opacity-70 group-hover:translate-x-4 transition" />
+          </a>
+        </div>
       </div>
     </motion.section>
   );
