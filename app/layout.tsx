@@ -12,6 +12,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Aqib Shabir | Portfolio",
   description: "Aqib Shabir's developer portfolio",
+  icons: {
+    icon: [
+      {
+        type: "image/png",
+        media: "(prefers-color-scheme: light)",
+        url: "/light-favicon.png",
+      },
+      {
+        type: "image/png",
+        media: "(prefers-color-scheme: dark)",
+        url: "/dark-favicon.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
