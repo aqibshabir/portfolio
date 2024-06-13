@@ -292,17 +292,20 @@ export const carouselDataStream = [
   {
     index: 0,
     title: "the brief",
-    paragraph: "blank text 1",
+    paragraph:
+      "I set myself a challenge to see whether I can build out a replica of a website that I frequent often - Twitch. I limited the brief to creating a live streaming platform that connects to OBS via a stream key. I also wanted to include a chat functionality with some features like blocking and adding friends.",
   },
   {
     index: 1,
-    title: "the purpose",
-    paragraph: "blank text 2",
+    title: "the set-up",
+    paragraph:
+      "To try this out for yourself! First create an account on StreamZone (don't worry, all the details are being authenticated with a trusted 3rd party provider - super safe!). Once the account has been created navigate to the dashboard and generate a stream key. Once you have a stream key, go into OBS and navigate to 'settings' and then into 'stream', for service choose custom and add in the details here.",
   },
   {
     index: 2,
-    title: "the set-up",
-    paragraph: "blank text 3",
+    title: "on reflection",
+    paragraph:
+      "This task took me a fair bit of time to create and really tested my developer skills. It was quite a challenge implementing the LiveKit client, I was reading a lot of documentation to make sure I was implementing it all correctly. To improve upon this for version 2, I would try to implement a video clipping functionality which persists after the live stream has ended. Maybe a great challenge to dig into in the future?",
   },
 ];
 
