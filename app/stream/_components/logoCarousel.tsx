@@ -35,6 +35,27 @@ function LogoCarousel() {
             <li className="hover:scale-105 ease-in-out transition">
               {skillsData[14].icon}
             </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[3].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[4].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[6].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[7].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[9].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[13].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[14].icon}
+            </li>
           </ul>
         </div>
 
@@ -44,6 +65,27 @@ function LogoCarousel() {
         >
           <ul className="flex p-[1rem] gap-[2.5rem] sm:gap-[4rem] md:gap-[6rem] text-4xl sm:text-6xl md:text-8xl">
             <li className="ml-[0.5rem] sm:ml-[2.7rem] md:ml-[4rem] hover:scale-105 ease-in-out transition">
+              {skillsData[3].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[4].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[6].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[7].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[9].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[13].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
+              {skillsData[14].icon}
+            </li>
+            <li className="hover:scale-105 ease-in-out transition">
               {skillsData[3].icon}
             </li>
             <li className="hover:scale-105 ease-in-out transition">
