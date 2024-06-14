@@ -5,7 +5,7 @@ function LogoCarousel() {
   return (
     <>
       <div
-        className="group ml-auto mr-auto flex justify-center max-w-[90%] sm:-w-[90%] md:-w-[90%]  lg:max-w-[1400px] overflow-hidden text-transparent/40 dark:text-white/40"
+        className="group ml-auto mr-auto flex justify-center max-w-[90%] sm:-w-[90%] md:-w-[90%]  lg:max-w-[1400px] overflow-hidden text-gray-700 dark:text-white/40"
         style={{
           WebkitMask:
             "linear-gradient(90deg, transparent, white 20%, white 50%, transparent)",

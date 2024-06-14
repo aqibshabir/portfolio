@@ -12,9 +12,9 @@ export default function Page() {
       <Header />
       <Video />
       <LogoCarousel />
+      <LinkButtons />
       <Cards />
       <Carousel />
-      <LinkButtons />
     </div>
   );
 }
