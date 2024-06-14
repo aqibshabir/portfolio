@@ -313,16 +313,19 @@ export const carouselDataStash = [
   {
     index: 0,
     title: "the brief",
-    paragraph: "blank text 1",
+    paragraph:
+      "In this brief, I set out to learn how to recreate a cloud file storage provider, such as Dropbox. The main objective was to create CRUD functionalities for files. I wanted to present this data in a clean way with dark/light-mode feature and have the data persist in a cloud database (firebase).",
   },
   {
     index: 1,
-    title: "the purpose",
-    paragraph: "blank text 2",
+    title: "On Reflection",
+    paragraph:
+      "I found this to be a great starter project into the realm of a more complete web application. Once I had completed the first version, it reminded me a lot about the core fundementals of React and state management. If I were to improve upon this application further, I would implement some type of preview for each file when clicked. I would also consider turning this into a SaaS, having a FREE tier that allows 10 files to be stored and then once this limit was reached, prompt for a PRO version that incorperates Stripe payments and allows for more files to be stored.",
   },
   {
     index: 2,
     title: "the set-up",
-    paragraph: "blank text 3",
+    paragraph:
+      "To try this application for yourself, simply head over to the link above and create an account. Once your account is created navigate to the dashboard page and add a file. Just beware that the file size should not exceed the maximum storage amount.",
   },
 ];
