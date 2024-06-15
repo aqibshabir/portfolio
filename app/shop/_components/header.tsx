@@ -8,7 +8,7 @@ import { TbArrowBarToLeft } from "react-icons/tb";
 
 export default function Header() {
   return (
-    <header className="group z-[999] relative ">
+    <header className="group z-[999] relative">
       <motion.div
         className="fixed border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] top-6 left-[100px] h-[3.25rem] w-[10rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
