@@ -108,6 +108,7 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/aqibshabir"
             target="_blank"
+            aria-label="go to linked-in profile"
             className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-blue-500 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-blue-500  dark:text-white dark:border-white/20"
           >
             <BsLinkedin />
@@ -115,6 +116,7 @@ export default function Intro() {
           <a
             href="https://www.github.com/aqibshabir"
             target="_blank"
+            aria-label="go to my github page"
             className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:bg-gray-700 hover:text-white outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-white
             dark:hover:text-black  dark:text-white dark:border-white/20"
           >
