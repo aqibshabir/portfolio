@@ -20,6 +20,8 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <button
+        id="toggle-nav-menu"
+        aria-label="toggle nav menu"
         className="sm:hidden z-[1000] flex justify-center items-center fixed top-[5rem] right-[1.5rem] h-[2.75rem] w-[2.75rem] shadow-lg bg-white opacity-90 backdrop-blur-[0.5rem] border borderBlack border-opacity-40 rounded-full hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 dark:border-white/20 cursor-pointer"
         onClick={() => onHandleClick()}
       >
@@ -48,6 +50,7 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
+                aria-label={link.name}
                 className={cn(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
