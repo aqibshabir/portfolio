@@ -12,7 +12,10 @@ function LinkButtons() {
         github repository
         <FaGithub size={25} />
       </a>
-      <a className="flex justify-center items-center gap-2 w-[300px] h-[60px] sm:px-12 sm:py-6 capitalize rounded-full hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-gray-700 dark:text-white dark:border-white/20 cursor-pointer">
+      <a
+        href="/stash"
+        className="flex justify-center items-center gap-2 w-[300px] h-[60px] sm:px-12 sm:py-6 capitalize rounded-full hover:bg-gray-200 outline-none focus:scale-110 hover:scale-110 transition borderBlack hover:border-none dark:bg-gray-950 dark:hover:bg-gray-700 dark:text-white dark:border-white/20 cursor-pointer"
+      >
         live link
         <FaExternalLinkAlt size={16} />
       </a>
