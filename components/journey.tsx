@@ -17,7 +17,7 @@ export default function Journey() {
   const { theme } = useTheme();
 
   return (
-    <section ref={ref} id="journey" className="scroll-mt-28 mt-20 mb-28 mx-2 ">
+    <section ref={ref} id="journey" className="scroll-mt-28 mt-20 mb-60 mx-2 ">
       <SectionHeading>My journey</SectionHeading>
       <VerticalTimeline lineColor="">
         {journeyData.map((item, index) => (

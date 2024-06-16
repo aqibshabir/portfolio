@@ -22,7 +22,6 @@ export default function Home() {
       <Projects />
       <SectionDivider />
       <Journey />
-      <SectionDivider />
       <Contact />
     </main>
   );
