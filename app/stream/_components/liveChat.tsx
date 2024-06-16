@@ -11,7 +11,7 @@ function LiveChat() {
         </h2>
         <div className="group-hover:scale-105">
           <IoChatboxOutline className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] lg:w-[110px] lg:h-[110px]" />
-          <GoDotFill className=" sm:w-[20px] sm:h-[20px] lg:w-[25px] lg:h-[25px] absolute right-4 top-6 sm:top-7 sm:right-[20px] lg:top-8 lg:right-[24px] transition " />
+          <GoDotFill className=" sm:w-[20px] sm:h-[20px] lg:w-[25px] lg:h-[25px] absolute right-4 top-6 sm:top-7 sm:right-[20px] lg:top-8 lg:right-[24px] transition" />
           <GoDotFill className="sm:w-[20px] sm:h-[20px] lg:w-[25px] lg:h-[25px] absolute right-8 top-6 sm:top-7 sm:right-[36px] lg:top-8 lg:right-[42px] transition" />
           <GoDotFill className="sm:w-[20px] sm:h-[20px] lg:w-[25px] lg:h-[25px] absolute right-12 top-6 sm:top-7 sm:right-[52px] lg:top-8 lg:right-[60px] transition" />
         </div>
