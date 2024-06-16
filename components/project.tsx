@@ -43,7 +43,7 @@ export default function Project({
               {title}{" "}
               <FiArrowUpRight className="inline ml-1 mb-1 text-md opacity-70 transition-all group-hover:-translate-y-2 group-hover:translate-x-1" />
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700 sm:mb-4 md:mb-0 z-20 dark:text-white/70">
+            <p className="mt-2 text-sm leading-relaxed text-gray-950 sm:mb-4 md:mb-0 z-20 dark:text-white/70">
               {description}
             </p>
             <ul className="flex flex-wrap gap-2 mt-auto z-20">
