@@ -49,7 +49,7 @@ export default function Project({
             <ul className="flex flex-wrap gap-2 mt-auto z-20">
               {tags.map((tag, index) => (
                 <li
-                  className="bg-gray-800 px-3 py-1 space-y-3 text-[0.7rem] uppercase text-white rounded-full dark:text-black dark:bg-white/90"
+                  className="bg-transparent/10 px-3 py-1 space-y-3 text-[0.7rem] font-semibold uppercase text-gray-950 rounded-full dark:text-black dark:bg-white/90 hover:bg-gray-800 hover:text-white"
                   key={index}
                 >
                   {tag}
