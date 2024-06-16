@@ -42,7 +42,7 @@ export default function Intro() {
               height="250"
               quality="95"
               priority={true}
-              className="h-44 w-44 sm:h-60 sm:w-60 object-cover rounded-full bg-transparent/5 dark:bg-transparent/20 cursor-pointer"
+              className="object-cover rounded-full bg-transparent/5 dark:bg-transparent/20 cursor-pointer"
             />
             {active && (
               <>
