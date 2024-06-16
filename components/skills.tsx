@@ -44,7 +44,6 @@ export default function Skills() {
               "group flex justify-center items-center text-center p-2 text-gray-600 hover:text-gray-950  bg-white/20  border border-black/[0.1] rounded-2xl hover:bg-white dark:bg-opacity-5 dark:border-black/80 dark:bg-black/50 dark:hover:bg-black/10 dark:text-white/80 dark:hover:text-white"
             }
             key={index}
-            title={skill.name}
           >
             <span className="group-hover:-translate-y-[1px] group-hover:-translate-x-[1px] transition-all">
               {skill.icon}
