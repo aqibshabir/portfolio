@@ -59,7 +59,7 @@ export default function Project({
           </div>
           <div className="">
             <Image
-              className="z-21 opacity-0 sm:opacity-100 absolute top-40 sm:top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 
+              className="z-21 hidden sm:block absolute top-40 sm:top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 
         group-even:group-hover:rotate-2
         group-even:group-hover:translate-x-3
         group-even:group-hover:translate-y-3
