@@ -9,6 +9,7 @@ function Video() {
           src="https://player.vimeo.com/video/959160916?h=c5da17696c&background=1&loop=1&autoplay=1&mute=1&dnt=1"
           width="100%"
           allowFullScreen
+          title="looping video of my website"
         ></iframe>
       </div>
     </div>
