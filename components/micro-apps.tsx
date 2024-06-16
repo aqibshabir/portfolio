@@ -61,7 +61,7 @@ export default function MicroApps({
           <ul className="flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] font-semibold px-2 py-1 space-y-3 text-[0.5rem] uppercase tracking-wider text-white rounded-full dark:text-black dark:bg-white/90"
+                className="bg-gray-800 font-semibold px-2 py-1 space-y-3 text-[0.5rem] uppercase tracking-wider text-white rounded-full dark:text-black dark:bg-white/90"
                 key={index}
               >
                 {tag}
