@@ -10,6 +10,7 @@ function Video() {
           width="100%"
           allowFullScreen
           title="looping video of my website"
+          loading="lazy"
         ></iframe>
       </div>
     </div>
