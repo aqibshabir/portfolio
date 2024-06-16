@@ -60,6 +60,7 @@ export default function Contact() {
           required
           maxLength={100}
           placeholder="Your email"
+          aria-label="insert your email"
         />
         <textarea
           name="message"
@@ -67,6 +68,7 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={500}
+          aria-label="insert your message"
         />
         <div className="flex justify-center sm:justify-end">
           <SubmitBtn />
