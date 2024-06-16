@@ -10,12 +10,10 @@ function ScrapingCard() {
   return (
     <div className="group">
       <div className="flex items-center sm:justify-center mb-2 lg:p-2">
-        <h2 className="">
-          <TbSquareNumber8Filled className="text-[5rem] mr-2 group-hover:scale-105 transition ease-linear sm:mt-3 md:mt-0" />
-        </h2>
-        <p className="text-xl sm:text-lg md:text-2xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem] lg:ml-2 xl:ml-4">
+        <TbSquareNumber8Filled className="text-[5rem] mr-2 group-hover:scale-105 transition ease-linear sm:mt-3 md:mt-0" />
+        <h2 className="text-xl sm:text-lg md:text-2xl font-black capitalize lg:text-[1.7rem] xl:text-[2rem] lg:ml-2 xl:ml-4">
           Supermarkets scraped
-        </p>
+        </h2>
       </div>
       <div className="sm:hidden md:block">
         <p className="text-sm text-gray-500 p-2 text-center">
