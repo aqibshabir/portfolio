@@ -31,7 +31,7 @@ export default function Intro() {
           }}
         >
           <div
-            className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20 hover:dark:border-white/5 hover:border-transparent/10"
+            className="rounded-full border-[0.75rem]  border-transparent/5 shadow-x-10 dark:border-transparent/20 sm:hover:dark:border-white/5 sm:hover:border-transparent/10"
             onMouseEnter={() => setActive(!active)}
             onMouseLeave={() => setActive(!active)}
           >
@@ -42,7 +42,7 @@ export default function Intro() {
               height="250"
               quality="95"
               priority={true}
-              className="object-cover rounded-full bg-transparent/5 dark:bg-transparent/20 cursor-pointer"
+              className="object-cover rounded-full bg-transparent/5 dark:bg-transparent/20 sm:cursor-pointer"
             />
             {active && (
               <>
@@ -54,7 +54,7 @@ export default function Intro() {
                     bounce: 0.6,
                     duration: 0.4,
                   }}
-                  className="absolute flex justify-center items-center top-[10%] left-[69%] sm:left-[69%] sm:h-[80px] h-[50px] sm:w-[150px] w-[70px] rounded-bl-none rounded-full shadow-x-10 bg-transparent/5 hover:bg-transparent/10 dark:bg-transparent/20 hover:dark:bg-transparent/40 cursor-pointer"
+                  className="hidden sm:flex absolute justify-center items-center top-[10%] left-[69%] sm:left-[69%] sm:h-[80px] h-[50px] sm:w-[150px] w-[70px] rounded-bl-none rounded-full shadow-x-10 bg-transparent/5 hover:bg-transparent/10 dark:bg-transparent/20 hover:dark:bg-transparent/40 cursor-pointer"
                 >
                   <p className="font-bold sm:text-4xl tracking-wide text-xl text-transparent/60 dark:text-white">
                     Hi!
