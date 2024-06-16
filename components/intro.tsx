@@ -12,11 +12,14 @@ export default function Intro() {
 
   useEffect(() => {
     setHasMounted(true);
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
 
   if (!hasMounted) {
     return (
-      <div className="h-[1000px]">
+      <div className="h-[100vh]">
         <div>
           <h1 className=" mt-40 mb-10 text-6xl text-center font-black text-gray-800/40 dark:text-white/70">
             Loading
