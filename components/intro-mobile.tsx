@@ -38,8 +38,13 @@ export default function IntroMobile() {
         <span className="font-bold">love</span> making websites look{" "}
         <span className="italic">awesome</span>. I mainly focus on{" "}
         <span className="font-bold">front-end</span>{" "}
-        <span className="underline">JavaScript</span> technologies like{" "}
-        <span className="underline">React & Next.js</span>
+        <span className="bg-gradient-to-r dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 from-indigo-500 via-purple-500 to-pink-500 px-[10px] py-[2px] rounded-xl text-white font-semibold">
+          JavaScript
+        </span>{" "}
+        technologies like{" "}
+        <span className="bg-gradient-to-r dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 from-indigo-500 via-purple-500 to-pink-500 px-[10px] py-[1px] rounded-xl text-white font-semibold">
+          React & Next.js
+        </span>
       </h1>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 font-medium space-y-2">

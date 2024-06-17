@@ -75,8 +75,13 @@ export default function IntroDesktop() {
         <span className="font-bold">love</span> making websites look{" "}
         <span className="italic">awesome</span>. I mainly focus on{" "}
         <span className="font-bold">front-end</span>{" "}
-        <span className="underline">JavaScript</span> technologies like{" "}
-        <span className="underline">React & Next.js</span>
+        <span className="bg-gradient-to-r dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 from-indigo-500 via-purple-500 to-pink-500 px-[13px] py-[2px] rounded-xl text-white font-semibold">
+          JavaScript
+        </span>{" "}
+        technologies like{" "}
+        <span className="bg-gradient-to-r dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 from-indigo-500 via-purple-500 to-pink-500 px-[13px] py-[2px] rounded-xl text-white font-semibold">
+          React & Next.js
+        </span>
       </motion.h1>
 
       <motion.div
