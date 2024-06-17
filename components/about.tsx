@@ -42,7 +42,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className="hidden md:block bg-inherit absolute top-[18%] right-[15%] sm:top-[17.4%] sm:right-[20%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="hidden md:block bg-inherit absolute top-[18%] right-[15%] sm:top-[17.4%] sm:right-[20%] md:right-[42%] md:top-[17.8%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
             src={meme.src}
           />
         )}

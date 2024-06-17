@@ -32,12 +32,13 @@ export default function IntroMobile() {
         </div>
       </div>
 
-      <h1 className="sm:text-3xl text-xl sm:mt-14 mb-10 mt-10 px-4 font-medium !leading-[1.5]">
+      <h1 className="sm:text-3xl text-xl sm:mt-14 mb-10 mt-10 px-4 font-medium !leading-[1.5] text-balance">
         Hi,<span className="font-bold"> I&apos;m Aqib!</span> A{" "}
         <span className="font-bold">full-stack developer</span> from the UK. I{" "}
         <span className="font-bold">love</span> making websites look{" "}
-        <span className="underline">awesome</span>. I mainly focus on{" "}
-        <span className="font-bold">front-end</span> technologies like{" "}
+        <span className="italic">awesome</span>. I mainly focus on{" "}
+        <span className="font-bold">front-end</span>{" "}
+        <span className="underline">JavaScript</span> technologies like{" "}
         <span className="underline">React & Next.js</span>
       </h1>
 

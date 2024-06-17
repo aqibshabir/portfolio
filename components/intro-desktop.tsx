@@ -18,7 +18,7 @@ export default function IntroDesktop() {
     <section
       ref={ref}
       id="home"
-      className="mt-2 sm:mt-16 mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mt-2 sm:mt-16 mb-28 max-w-[820px] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center relative">
         <motion.div
@@ -66,15 +66,16 @@ export default function IntroDesktop() {
       </div>
 
       <motion.h1
-        className="sm:text-3xl text-xl sm:mt-14 mb-10 mt-10 px-4 font-medium !leading-[1.5]"
+        className="sm:text-3xl text-xl sm:mt-14 mb-10 mt-10 px-4 font-medium !leading-[1.5] text-balance"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Hi,<span className="font-bold"> I&apos;m Aqib!</span> A{" "}
-        <span className="font-bold">full-stack developer</span> from the UK. I{" "}
+        <span className="font-bold">Full-Stack Developer</span> from the UK. I{" "}
         <span className="font-bold">love</span> making websites look{" "}
-        <span className="underline">awesome</span>. I mainly focus on{" "}
-        <span className="font-bold">front-end</span> technologies like{" "}
+        <span className="italic">awesome</span>. I mainly focus on{" "}
+        <span className="font-bold">front-end</span>{" "}
+        <span className="underline">JavaScript</span> technologies like{" "}
         <span className="underline">React & Next.js</span>
       </motion.h1>
 
