@@ -42,7 +42,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className="hidden md:block bg-inherit absolute top-[18%] right-[15%] sm:top-[17.4%] sm:right-[20%] md:right-[42%] md:top-[17.8%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="hidden md:block bg-inherit absolute md:right-[42%] md:top-[18.2%] xl:right-[50%] w-[498px] h-[320px] rounded-3xl shadow-lg"
             src={meme.src}
           />
         )}
@@ -55,7 +55,7 @@ export default function About() {
               duration: 0.25,
               ease: "linear",
             }}
-            className="hidden md:block bg-inherit absolute top-[14.6%] right-[15%] sm:top-[16%] sm:left-[45%] md:right-[50%] w-[249px] h-[160px] sm:w-[498px] sm:h-[320px] rounded-3xl shadow-lg"
+            className="hidden md:block bg-inherit absolute md:top-[16.5%] md:left-[42%] xl:left-[50%] w-[498px] h-[320px] rounded-3xl shadow-lg"
             src={omlette.src}
           />
         )}
