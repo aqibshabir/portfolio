@@ -87,15 +87,15 @@ export const journeyData = [
     title: "English Teacher",
     location: "Hong Kong, Asia",
     description:
-      "I worked as an English teacher abroad and later, remotely during the pandemic.",
+      "I gained experience as an English teacher abroad and subsequently transitioned to remote teaching during the pandemic.",
     icon: React.createElement(BiWorld),
     date: "2018 - 2021",
   },
   {
-    title: "Full Time job + upskilling",
+    title: "Inventory Control Specialist & upskilling",
     location: "Chester, UK",
     description:
-      "Nearing the end of the pandemic I shifted my focus to learn the fundamentals of programming whilst working a full-time job as a warehouse associate.",
+      "As the pandemic began to subside, I transitioned my focus towards learning the fundamentals of programming while simultaneously maintaining a full-time position as an Inventory Control Specialist at Culina Group Limited.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2024",
   },
@@ -103,7 +103,7 @@ export const journeyData = [
     title: "Graduated bootcamp",
     location: "London, UK",
     description:
-      "I graduated after 3 months of a full-time immersive bootcamp at The Jump Digital School.",
+      "I successfully completed a full-time, three-month immersive bootcamp at The Jump Digital School. I am currently dedicated to transitioning into a career in software engineering.",
     icon: React.createElement(FaReact),
     date: "2023-2024",
   },
