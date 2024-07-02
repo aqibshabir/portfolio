@@ -70,7 +70,7 @@ export default function Contact() {
           maxLength={500}
           aria-label="insert your message"
         />
-        <div className="flex justify-center sm:justify-end">
+        <div className="flex justify-center">
           <SubmitBtn />
         </div>
       </form>
