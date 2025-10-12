@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { useSectionInView } from "@/hooks/hooks";
-import { motion } from "framer-motion";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import { toast } from "sonner";
+import React from 'react';
+import SectionHeading from './section-heading';
+import { useSectionInView } from '@/hooks/hooks';
+import { motion } from 'framer-motion';
+import { sendEmail } from '@/actions/sendEmail';
+import SubmitBtn from './submit-btn';
+import { toast } from 'sonner';
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 0.2);
+  const { ref } = useSectionInView('Contact', 0.2);
 
   return (
     <motion.section
@@ -31,13 +31,10 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-700 -mt-10 dark:text-white mx-2 sm:mx-0 ">
-        Please contact me directly at{" "}
-        <a
-          className="underline hover:text-[#9884fc]"
-          href="mailto:aqibfaisalshabir@gmail.com"
-        >
+        Please contact me directly at{' '}
+        <a className="underline hover:text-[#9884fc]" href="mailto:aqibfaisalshabir@gmail.com">
           aqibfaisalshabir@gmail.com
-        </a>{" "}
+        </a>{' '}
         or through this form
       </p>
 
@@ -50,7 +47,7 @@ export default function Contact() {
             toast.error(error);
             return;
           }
-          toast.success("Email sent successfully!");
+          toast.success('Email sent successfully!');
         }}
       >
         <input
@@ -69,6 +66,13 @@ export default function Contact() {
           required
           maxLength={500}
           aria-label="insert your message"
+        />
+        <input
+          name="honeypot"
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
         />
         <div className="flex justify-center">
           <SubmitBtn />
